@@ -1,0 +1,6 @@
+09-17 15:11:29 net2net_min_distance.action_net2net_min_distance 84:Plugin executed on: 'linux'
+09-17 15:11:29 net2net_min_distance.action_net2net_min_distance 85:Plugin executed with python version: '3.8.5 (default, Jul 28 2020, 12:59:40) \n[GCC 9.3.0]'
+09-17 15:11:29 net2net_min_distance.action_net2net_min_distance 86:KiCad build version: 5.1.10-88a1d61d58~90~ubuntu20.04.1
+09-17 15:11:29 net2net_min_distance.action_net2net_min_distance 87:Net2net distance plugin version: 15 started
+09-17 15:11:29 net2net_min_distance.net2net_distance 110:Net2net getting min distance between /IO Expander.sch/IN_A3 and /IO Expander.sch/IN_A2
+09-17 15:11:29 net2net_min_distance.net2net_distance 122:Found 5 tracks on /IO Expander.sch/IN_A3 and 5tracks on /IO Expander.sch/IN_A2

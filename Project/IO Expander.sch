@@ -1,0 +1,1647 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 8
+Title "TMC6200-TA-T Eval Board"
+Date "2021-09-03"
+Rev "ED A0"
+Comp "Quasi Peak"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5150 4150 5150 4100
+Wire Wire Line
+	5150 4100 5100 4100
+Wire Wire Line
+	5100 4000 5150 4000
+Wire Wire Line
+	5150 4000 5150 4100
+Connection ~ 5150 4100
+Wire Wire Line
+	4100 2200 4050 2200
+Wire Wire Line
+	4050 2200 4050 2150
+Wire Wire Line
+	4100 4100 4050 4100
+Wire Wire Line
+	4050 4100 4050 4150
+Wire Wire Line
+	4100 4000 4050 4000
+Wire Wire Line
+	4050 4000 4050 4100
+Connection ~ 4050 4100
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP?
+U 1 1 612A857A
+P 3850 3900
+AR Path="/6119B01A/612A857A" Ref="JP?"  Part="1" 
+AR Path="/612A6248/612A857A" Ref="JP801"  Part="1" 
+F 0 "JP801" V 3925 4525 50  0001 C CNN
+F 1 "SolderJumper_3_Bridged12" V 3825 4525 50  0001 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels" H 3850 3900 50  0001 C CNN
+F 3 "~" H 3850 3900 50  0001 C CNN
+	1    3850 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3850 4100 3850 4150
+$Comp
+L Device:C C?
+U 1 1 612AB375
+P 1400 2200
+AR Path="/60ABCC10/612AB375" Ref="C?"  Part="1" 
+AR Path="/60B3EE27/612AB375" Ref="C?"  Part="1" 
+AR Path="/6119B01A/612AB375" Ref="C?"  Part="1" 
+AR Path="/612A6248/612AB375" Ref="C801"  Part="1" 
+F 0 "C801" H 1175 2150 31  0000 L CNN
+F 1 "1u" H 1175 2200 31  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1438 2050 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 1400 2200 31  0001 C CNN
+F 4 "KEMET" H 1400 2200 31  0001 C CNN "Manufacturer"
+F 5 "C0603C105K4RACTU " H 1400 2200 31  0001 C CNN "Mfg number"
+F 6 "0603" H 1175 2250 31  0000 L CNN "Package"
+F 7 "16 V" H 1175 2300 31  0000 L CNN "Voltage"
+F 8 "X7R" H 1400 2200 31  0001 C CNN "Izolation material"
+F 9 "10 %" H 1400 2200 31  0001 C CNN "Tolerance"
+F 10 "C0603C105K4RACTU " H 1400 2200 50  0001 C CNN "Part Number"
+	1    1400 2200
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 612AB381
+P 1750 2200
+AR Path="/60ABCC10/612AB381" Ref="C?"  Part="1" 
+AR Path="/60B3EE27/612AB381" Ref="C?"  Part="1" 
+AR Path="/6119B01A/612AB381" Ref="C?"  Part="1" 
+AR Path="/612A6248/612AB381" Ref="C802"  Part="1" 
+F 0 "C802" H 1525 2250 31  0000 L CNN
+F 1 "100n" H 1525 2200 31  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1788 2050 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/281/1/GRM155C71H104JE19_01A-1983567.pdf" H 1750 2200 31  0001 C CNN
+F 4 "Murata Electronics" H 1750 2200 31  0001 C CNN "Manufacturer"
+F 5 "GRM155C71H104JE19D " H 1750 2200 31  0001 C CNN "Mfg number"
+F 6 "0402" H 1525 2150 31  0000 L CNN "Package"
+F 7 "50 V" H 1525 2100 31  0000 L CNN "Voltage"
+F 8 "X7S" H 1750 2200 31  0001 C CNN "Izolation material"
+F 9 "5%" H 1750 2200 31  0001 C CNN "Tolerance"
+F 10 "GRM155C71H104JE19D " H 1750 2200 50  0001 C CNN "Part Number"
+	1    1750 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 2400 1400 2350
+Wire Wire Line
+	1750 2400 1750 2350
+Wire Wire Line
+	1400 2000 1400 2050
+Wire Wire Line
+	1400 2000 1750 2000
+Wire Wire Line
+	1750 2000 1750 2050
+Connection ~ 1400 2000
+Wire Wire Line
+	1750 2000 1850 2000
+Connection ~ 1750 2000
+Wire Wire Line
+	1000 2000 1000 1900
+$Comp
+L power:+3.3V #PWR?
+U 1 1 612AB390
+P 1000 1900
+AR Path="/60ABCC10/612AB390" Ref="#PWR?"  Part="1" 
+AR Path="/60B3EE27/612AB390" Ref="#PWR?"  Part="1" 
+AR Path="/6119B01A/612AB390" Ref="#PWR?"  Part="1" 
+AR Path="/612A6248/612AB390" Ref="#PWR0801"  Part="1" 
+F 0 "#PWR0801" H 1000 1750 50  0001 C CNN
+F 1 "+3.3V" H 1075 2000 28  0000 C CNN
+F 2 "" H 1000 1900 50  0001 C CNN
+F 3 "" H 1000 1900 50  0001 C CNN
+	1    1000 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 612AB396
+P 1400 2400
+AR Path="/60C0DB51/612AB396" Ref="#PWR?"  Part="1" 
+AR Path="/60C6954B/612AB396" Ref="#PWR?"  Part="1" 
+AR Path="/60B3EE27/612AB396" Ref="#PWR?"  Part="1" 
+AR Path="/6119B01A/612AB396" Ref="#PWR?"  Part="1" 
+AR Path="/612A6248/612AB396" Ref="#PWR0806"  Part="1" 
+F 0 "#PWR0806" H 1400 2150 50  0001 C CNN
+F 1 "GND" H 1325 2300 28  0000 C CNN
+F 2 "" H 1400 2400 50  0001 C CNN
+F 3 "" H 1400 2400 50  0001 C CNN
+	1    1400 2400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 612AB39C
+P 1750 2400
+AR Path="/60C0DB51/612AB39C" Ref="#PWR?"  Part="1" 
+AR Path="/60C6954B/612AB39C" Ref="#PWR?"  Part="1" 
+AR Path="/60B3EE27/612AB39C" Ref="#PWR?"  Part="1" 
+AR Path="/6119B01A/612AB39C" Ref="#PWR?"  Part="1" 
+AR Path="/612A6248/612AB39C" Ref="#PWR0807"  Part="1" 
+F 0 "#PWR0807" H 1750 2150 50  0001 C CNN
+F 1 "GND" H 1675 2300 28  0000 C CNN
+F 2 "" H 1750 2400 50  0001 C CNN
+F 3 "" H 1750 2400 50  0001 C CNN
+	1    1750 2400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 2000 1050 2000
+$Comp
+L power:VDD #PWR?
+U 1 1 612ACAAE
+P 1850 1950
+AR Path="/6119B01A/612ACAAE" Ref="#PWR?"  Part="1" 
+AR Path="/612A6248/612ACAAE" Ref="#PWR0802"  Part="1" 
+F 0 "#PWR0802" H 1850 1800 50  0001 C CNN
+F 1 "VDD" H 1900 2050 28  0000 C CNN
+F 2 "" H 1850 1950 50  0001 C CNN
+F 3 "" H 1850 1950 50  0001 C CNN
+	1    1850 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1950 1850 2000
+Wire Wire Line
+	1350 2000 1400 2000
+$Comp
+L power:VDD #PWR?
+U 1 1 612B4FAD
+P 1500 4075
+AR Path="/6119B01A/612B4FAD" Ref="#PWR?"  Part="1" 
+AR Path="/612A6248/612B4FAD" Ref="#PWR0817"  Part="1" 
+F 0 "#PWR0817" H 1500 3925 50  0001 C CNN
+F 1 "VDD" H 1550 4175 28  0000 C CNN
+F 2 "" H 1500 4075 50  0001 C CNN
+F 3 "" H 1500 4075 50  0001 C CNN
+	1    1500 4075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 4875 1500 4825
+Wire Wire Line
+	1500 4525 1500 4475
+Wire Wire Line
+	1500 4125 1500 4075
+Connection ~ 1500 4475
+Wire Wire Line
+	1500 4475 1500 4425
+$Comp
+L Device:C C?
+U 1 1 612B4FBF
+P 1500 4675
+AR Path="/60ABCC10/612B4FBF" Ref="C?"  Part="1" 
+AR Path="/60B3EE27/612B4FBF" Ref="C?"  Part="1" 
+AR Path="/6119B01A/612B4FBF" Ref="C?"  Part="1" 
+AR Path="/612A6248/612B4FBF" Ref="C807"  Part="1" 
+F 0 "C807" H 1275 4725 31  0000 L CNN
+F 1 "100n" H 1275 4675 31  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1538 4525 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/281/1/GRM155C71H104JE19_01A-1983567.pdf" H 1500 4675 31  0001 C CNN
+F 4 "Murata Electronics" H 1500 4675 31  0001 C CNN "Manufacturer"
+F 5 "GRM155C71H104JE19D " H 1500 4675 31  0001 C CNN "Mfg number"
+F 6 "0402" H 1275 4625 31  0000 L CNN "Package"
+F 7 "50 V" H 1275 4575 31  0000 L CNN "Voltage"
+F 8 "X7S" H 1500 4675 31  0001 C CNN "Izolation material"
+F 9 "5%" H 1500 4675 31  0001 C CNN "Tolerance"
+F 10 "GRM155C71H104JE19D " H 1500 4675 50  0001 C CNN "Part Number"
+	1    1500 4675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 612B4FCD
+P 1500 4275
+AR Path="/60ABCC10/612B4FCD" Ref="R?"  Part="1" 
+AR Path="/60B3EE27/612B4FCD" Ref="R?"  Part="1" 
+AR Path="/6119B01A/612B4FCD" Ref="R?"  Part="1" 
+AR Path="/612A6248/612B4FCD" Ref="R812"  Part="1" 
+F 0 "R812" H 1275 4200 31  0000 L CNN
+F 1 "10k" H 1275 4250 31  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1430 4275 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/447/PYu_RC_Group_51_RoHS_L_10-1664068.pdf" H 1500 4275 31  0001 C CNN
+F 4 "Yageo " H 1500 4275 31  0001 C CNN "Manufacturer"
+F 5 "0402" H 1500 4275 31  0001 C CNN "Package"
+F 6 "RC0402FR-0710KL" H 1500 4275 31  0001 C CNN "Part Number"
+F 7 "62.5mW" H 1275 4300 31  0000 L CNN "Nominal Power"
+F 8 "1%" H 1275 4350 31  0000 L CNN "Tolerance"
+F 9 "50V" H 1375 4350 31  0001 C CNN "Voltage"
+F 10 "Thick Film" H 1500 4275 31  0001 C CNN "Type"
+F 11 "100PPM/C" H 1500 4275 31  0001 C CNN "TempCo"
+	1    1500 4275
+	1    0    0    1   
+$EndComp
+Text Label 1825 4475 2    39   ~ 0
+RESET
+$Comp
+L power:GND #PWR?
+U 1 1 612B4FD4
+P 1500 4875
+AR Path="/60C0DB51/612B4FD4" Ref="#PWR?"  Part="1" 
+AR Path="/60C6954B/612B4FD4" Ref="#PWR?"  Part="1" 
+AR Path="/60B3EE27/612B4FD4" Ref="#PWR?"  Part="1" 
+AR Path="/6119B01A/612B4FD4" Ref="#PWR?"  Part="1" 
+AR Path="/612A6248/612B4FD4" Ref="#PWR0821"  Part="1" 
+F 0 "#PWR0821" H 1500 4625 50  0001 C CNN
+F 1 "GND" H 1425 4775 28  0000 C CNN
+F 2 "" H 1500 4875 50  0001 C CNN
+F 3 "" H 1500 4875 50  0001 C CNN
+	1    1500 4875
+	-1   0    0    -1  
+$EndComp
+Text Label 3650 2350 0    39   ~ 0
+RESET
+Wire Wire Line
+	4100 2350 3650 2350
+Wire Wire Line
+	4100 2450 3650 2450
+Wire Wire Line
+	4100 2550 3650 2550
+Wire Wire Line
+	3650 3200 4100 3200
+Wire Wire Line
+	4100 3300 3650 3300
+NoConn ~ 4100 3100
+NoConn ~ 4100 3400
+$Comp
+L eval_board_tmc6200-ta:MCP23017T-E_ML U?
+U 1 1 612A743F
+P 4200 2100
+AR Path="/612A743F" Ref="U?"  Part="1" 
+AR Path="/612A6248/612A743F" Ref="U801"  Part="1" 
+F 0 "U801" H 4250 2150 39  0000 L CNN
+F 1 "MCP23017T-E_ML" H 5000 -50 39  0000 R CNN
+F 2 "eval_board_tmc6200-ta:MCP23017T-EML_QFN-28" H 4800 850 50  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/268/20001952C-1129816.pdf" H 4800 850 50  0001 C CNN
+	1    4200 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 612BC1B6
+P 3850 4150
+AR Path="/60C0DB51/612BC1B6" Ref="#PWR?"  Part="1" 
+AR Path="/60C6954B/612BC1B6" Ref="#PWR?"  Part="1" 
+AR Path="/60B3EE27/612BC1B6" Ref="#PWR?"  Part="1" 
+AR Path="/6119B01A/612BC1B6" Ref="#PWR?"  Part="1" 
+AR Path="/612A6248/612BC1B6" Ref="#PWR0818"  Part="1" 
+F 0 "#PWR0818" H 3850 3900 50  0001 C CNN
+F 1 "GND" H 3775 4050 28  0000 C CNN
+F 2 "" H 3850 4150 50  0001 C CNN
+F 3 "" H 3850 4150 50  0001 C CNN
+	1    3850 4150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 612BC3E1
+P 4050 4150
+AR Path="/60C0DB51/612BC3E1" Ref="#PWR?"  Part="1" 
+AR Path="/60C6954B/612BC3E1" Ref="#PWR?"  Part="1" 
+AR Path="/60B3EE27/612BC3E1" Ref="#PWR?"  Part="1" 
+AR Path="/6119B01A/612BC3E1" Ref="#PWR?"  Part="1" 
+AR Path="/612A6248/612BC3E1" Ref="#PWR0819"  Part="1" 
+F 0 "#PWR0819" H 4050 3900 50  0001 C CNN
+F 1 "GND" H 3975 4050 28  0000 C CNN
+F 2 "" H 4050 4150 50  0001 C CNN
+F 3 "" H 4050 4150 50  0001 C CNN
+	1    4050 4150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3900 4000 3900
+$Comp
+L power:VDD #PWR?
+U 1 1 612BCF0B
+P 3850 3700
+AR Path="/6119B01A/612BCF0B" Ref="#PWR?"  Part="1" 
+AR Path="/612A6248/612BCF0B" Ref="#PWR0812"  Part="1" 
+F 0 "#PWR0812" H 3850 3550 50  0001 C CNN
+F 1 "VDD" H 3900 3800 28  0000 C CNN
+F 2 "" H 3850 3700 50  0001 C CNN
+F 3 "" H 3850 3700 50  0001 C CNN
+	1    3850 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 612BD453
+P 9750 2500
+AR Path="/60ABCC10/612BD453" Ref="R?"  Part="1" 
+AR Path="/60B3EE27/612BD453" Ref="R?"  Part="1" 
+AR Path="/6119B01A/612BD453" Ref="R?"  Part="1" 
+AR Path="/612A6248/612BD453" Ref="R805"  Part="1" 
+F 0 "R805" V 9625 2400 31  0000 L CNN
+F 1 "10k" V 9675 2400 31  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9680 2500 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/447/PYu_RC_Group_51_RoHS_L_10-1664068.pdf" H 9750 2500 31  0001 C CNN
+F 4 "Yageo " H 9750 2500 31  0001 C CNN "Manufacturer"
+F 5 "0402" H 9750 2500 31  0001 C CNN "Package"
+F 6 "RC0402FR-0710KL" H 9750 2500 31  0001 C CNN "Part Number"
+F 7 "62.5mW" V 9825 2400 31  0000 L CNN "Nominal Power"
+F 8 "1%" V 9875 2400 31  0000 L CNN "Tolerance"
+F 9 "50V" H 9625 2575 31  0001 C CNN "Voltage"
+F 10 "Thick Film" H 9750 2500 31  0001 C CNN "Type"
+F 11 "100PPM/C" H 9750 2500 31  0001 C CNN "TempCo"
+	1    9750 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 612BD69F
+P 9500 2750
+AR Path="/60ABCC10/612BD69F" Ref="C?"  Part="1" 
+AR Path="/60B3EE27/612BD69F" Ref="C?"  Part="1" 
+AR Path="/6119B01A/612BD69F" Ref="C?"  Part="1" 
+AR Path="/612A6248/612BD69F" Ref="C804"  Part="1" 
+F 0 "C804" H 9275 2800 31  0000 L CNN
+F 1 "100n" H 9275 2750 31  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9538 2600 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/281/1/GRM155C71H104JE19_01A-1983567.pdf" H 9500 2750 31  0001 C CNN
+F 4 "Murata Electronics" H 9500 2750 31  0001 C CNN "Manufacturer"
+F 5 "GRM155C71H104JE19D " H 9500 2750 31  0001 C CNN "Mfg number"
+F 6 "0402" H 9275 2700 31  0000 L CNN "Package"
+F 7 "50 V" H 9275 2650 31  0000 L CNN "Voltage"
+F 8 "X7S" H 9500 2750 31  0001 C CNN "Izolation material"
+F 9 "5%" H 9500 2750 31  0001 C CNN "Tolerance"
+F 10 "GRM155C71H104JE19D " H 9500 2750 50  0001 C CNN "Part Number"
+	1    9500 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 612BD989
+P 10000 2250
+AR Path="/60ABCC10/612BD989" Ref="R?"  Part="1" 
+AR Path="/60B3EE27/612BD989" Ref="R?"  Part="1" 
+AR Path="/6119B01A/612BD989" Ref="R?"  Part="1" 
+AR Path="/612A6248/612BD989" Ref="R803"  Part="1" 
+F 0 "R803" H 9775 2175 31  0000 L CNN
+F 1 "10k" H 9775 2225 31  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9930 2250 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/447/PYu_RC_Group_51_RoHS_L_10-1664068.pdf" H 10000 2250 31  0001 C CNN
+F 4 "Yageo " H 10000 2250 31  0001 C CNN "Manufacturer"
+F 5 "0402" H 10000 2250 31  0001 C CNN "Package"
+F 6 "RC0402FR-0710KL" H 10000 2250 31  0001 C CNN "Part Number"
+F 7 "62.5mW" H 9775 2275 31  0000 L CNN "Nominal Power"
+F 8 "1%" H 9775 2325 31  0000 L CNN "Tolerance"
+F 9 "50V" H 9875 2325 31  0001 C CNN "Voltage"
+F 10 "Thick Film" H 10000 2250 31  0001 C CNN "Type"
+F 11 "100PPM/C" H 10000 2250 31  0001 C CNN "TempCo"
+	1    10000 2250
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9600 2500 9500 2500
+Wire Wire Line
+	9500 2500 9500 2600
+Wire Wire Line
+	10000 2400 10000 2500
+Wire Wire Line
+	10000 2500 9900 2500
+$Comp
+L power:GND #PWR?
+U 1 1 612BA3B5
+P 5150 4150
+AR Path="/60C0DB51/612BA3B5" Ref="#PWR?"  Part="1" 
+AR Path="/60C6954B/612BA3B5" Ref="#PWR?"  Part="1" 
+AR Path="/60B3EE27/612BA3B5" Ref="#PWR?"  Part="1" 
+AR Path="/6119B01A/612BA3B5" Ref="#PWR?"  Part="1" 
+AR Path="/612A6248/612BA3B5" Ref="#PWR0820"  Part="1" 
+F 0 "#PWR0820" H 5150 3900 50  0001 C CNN
+F 1 "GND" H 5075 4050 28  0000 C CNN
+F 2 "" H 5150 4150 50  0001 C CNN
+F 3 "" H 5150 4150 50  0001 C CNN
+	1    5150 4150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 612C31C4
+P 9500 2950
+AR Path="/60C0DB51/612C31C4" Ref="#PWR?"  Part="1" 
+AR Path="/60C6954B/612C31C4" Ref="#PWR?"  Part="1" 
+AR Path="/60B3EE27/612C31C4" Ref="#PWR?"  Part="1" 
+AR Path="/6119B01A/612C31C4" Ref="#PWR?"  Part="1" 
+AR Path="/612A6248/612C31C4" Ref="#PWR0809"  Part="1" 
+F 0 "#PWR0809" H 9500 2700 50  0001 C CNN
+F 1 "GND" H 9425 2850 28  0000 C CNN
+F 2 "" H 9500 2950 50  0001 C CNN
+F 3 "" H 9500 2950 50  0001 C CNN
+	1    9500 2950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 2950 9500 2900
+$Comp
+L power:+3.3V #PWR?
+U 1 1 612C3E2A
+P 10000 2050
+AR Path="/60ABCC10/612C3E2A" Ref="#PWR?"  Part="1" 
+AR Path="/60B3EE27/612C3E2A" Ref="#PWR?"  Part="1" 
+AR Path="/6119B01A/612C3E2A" Ref="#PWR?"  Part="1" 
+AR Path="/61367EFF/612C3E2A" Ref="#PWR?"  Part="1" 
+AR Path="/612A6248/612C3E2A" Ref="#PWR0804"  Part="1" 
+F 0 "#PWR0804" H 10000 1900 50  0001 C CNN
+F 1 "+3.3V" H 10100 2175 39  0000 C CNN
+F 2 "" H 10000 2050 50  0001 C CNN
+F 3 "" H 10000 2050 50  0001 C CNN
+	1    10000 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 2050 10000 2100
+Wire Wire Line
+	10000 2500 10350 2500
+Connection ~ 10000 2500
+Text Label 10350 2500 2    39   ~ 0
+IN_A0
+Text Label 10350 3500 2    39   ~ 0
+IN_A1
+Text Label 10350 4500 2    39   ~ 0
+IN_A2
+Text Label 10350 5500 2    39   ~ 0
+IN_A3
+Text Label 8850 2500 2    39   ~ 0
+IN_A4
+Text Label 8850 3500 2    39   ~ 0
+IN_A5
+Text Label 8850 4500 2    39   ~ 0
+IN_A6
+Text Label 8850 5500 2    39   ~ 0
+IN_A7
+Wire Wire Line
+	5100 2200 5550 2200
+Wire Wire Line
+	5100 2300 5550 2300
+Wire Wire Line
+	5100 2400 5550 2400
+Wire Wire Line
+	5100 2500 5550 2500
+Wire Wire Line
+	5100 2600 5550 2600
+Wire Wire Line
+	5100 2700 5550 2700
+Wire Wire Line
+	5100 2800 5550 2800
+Wire Wire Line
+	5100 2900 5550 2900
+Text Label 5550 2200 2    39   ~ 0
+GPA0
+Text Label 5550 2300 2    39   ~ 0
+GPA1
+Text Label 5550 2400 2    39   ~ 0
+GPA2
+Text Label 5550 2500 2    39   ~ 0
+GPA3
+Text Label 5550 2600 2    39   ~ 0
+GPA4
+Text Label 5550 2700 2    39   ~ 0
+GPA5
+Text Label 5550 2800 2    39   ~ 0
+GPA6
+Text Label 5550 2900 2    39   ~ 0
+GPA7
+Wire Wire Line
+	9500 2500 9100 2500
+Connection ~ 9500 2500
+Text Label 9100 2500 0    39   ~ 0
+GPA0
+$Comp
+L Device:R R?
+U 1 1 612D9E81
+P 9750 3500
+AR Path="/60ABCC10/612D9E81" Ref="R?"  Part="1" 
+AR Path="/60B3EE27/612D9E81" Ref="R?"  Part="1" 
+AR Path="/6119B01A/612D9E81" Ref="R?"  Part="1" 
+AR Path="/612A6248/612D9E81" Ref="R809"  Part="1" 
+F 0 "R809" V 9625 3400 31  0000 L CNN
+F 1 "10k" V 9675 3400 31  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9680 3500 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/447/PYu_RC_Group_51_RoHS_L_10-1664068.pdf" H 9750 3500 31  0001 C CNN
+F 4 "Yageo " H 9750 3500 31  0001 C CNN "Manufacturer"
+F 5 "0402" H 9750 3500 31  0001 C CNN "Package"
+F 6 "RC0402FR-0710KL" H 9750 3500 31  0001 C CNN "Part Number"
+F 7 "62.5mW" V 9825 3400 31  0000 L CNN "Nominal Power"
+F 8 "1%" V 9875 3400 31  0000 L CNN "Tolerance"
+F 9 "50V" H 9625 3575 31  0001 C CNN "Voltage"
+F 10 "Thick Film" H 9750 3500 31  0001 C CNN "Type"
+F 11 "100PPM/C" H 9750 3500 31  0001 C CNN "TempCo"
+	1    9750 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 612D9E8D
+P 9500 3750
+AR Path="/60ABCC10/612D9E8D" Ref="C?"  Part="1" 
+AR Path="/60B3EE27/612D9E8D" Ref="C?"  Part="1" 
+AR Path="/6119B01A/612D9E8D" Ref="C?"  Part="1" 
+AR Path="/612A6248/612D9E8D" Ref="C806"  Part="1" 
+F 0 "C806" H 9275 3800 31  0000 L CNN
+F 1 "100n" H 9275 3750 31  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9538 3600 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/281/1/GRM155C71H104JE19_01A-1983567.pdf" H 9500 3750 31  0001 C CNN
+F 4 "Murata Electronics" H 9500 3750 31  0001 C CNN "Manufacturer"
+F 5 "GRM155C71H104JE19D " H 9500 3750 31  0001 C CNN "Mfg number"
+F 6 "0402" H 9275 3700 31  0000 L CNN "Package"
+F 7 "50 V" H 9275 3650 31  0000 L CNN "Voltage"
+F 8 "X7S" H 9500 3750 31  0001 C CNN "Izolation material"
+F 9 "5%" H 9500 3750 31  0001 C CNN "Tolerance"
+F 10 "GRM155C71H104JE19D " H 9500 3750 50  0001 C CNN "Part Number"
+	1    9500 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 612D9E9B
+P 10000 3250
+AR Path="/60ABCC10/612D9E9B" Ref="R?"  Part="1" 
+AR Path="/60B3EE27/612D9E9B" Ref="R?"  Part="1" 
+AR Path="/6119B01A/612D9E9B" Ref="R?"  Part="1" 
+AR Path="/612A6248/612D9E9B" Ref="R807"  Part="1" 
+F 0 "R807" H 9775 3175 31  0000 L CNN
+F 1 "10k" H 9775 3225 31  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9930 3250 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/447/PYu_RC_Group_51_RoHS_L_10-1664068.pdf" H 10000 3250 31  0001 C CNN
+F 4 "Yageo " H 10000 3250 31  0001 C CNN "Manufacturer"
+F 5 "0402" H 10000 3250 31  0001 C CNN "Package"
+F 6 "RC0402FR-0710KL" H 10000 3250 31  0001 C CNN "Part Number"
+F 7 "62.5mW" H 9775 3275 31  0000 L CNN "Nominal Power"
+F 8 "1%" H 9775 3325 31  0000 L CNN "Tolerance"
+F 9 "50V" H 9875 3325 31  0001 C CNN "Voltage"
+F 10 "Thick Film" H 10000 3250 31  0001 C CNN "Type"
+F 11 "100PPM/C" H 10000 3250 31  0001 C CNN "TempCo"
+	1    10000 3250
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9600 3500 9500 3500
+Wire Wire Line
+	9500 3500 9500 3600
+Wire Wire Line
+	10000 3400 10000 3500
+Wire Wire Line
+	10000 3500 9900 3500
+Wire Wire Line
+	9500 3950 9500 3900
+$Comp
+L power:+3.3V #PWR?
+U 1 1 612D9EAC
+P 10000 3050
+AR Path="/60ABCC10/612D9EAC" Ref="#PWR?"  Part="1" 
+AR Path="/60B3EE27/612D9EAC" Ref="#PWR?"  Part="1" 
+AR Path="/6119B01A/612D9EAC" Ref="#PWR?"  Part="1" 
+AR Path="/61367EFF/612D9EAC" Ref="#PWR?"  Part="1" 
+AR Path="/612A6248/612D9EAC" Ref="#PWR0811"  Part="1" 
+F 0 "#PWR0811" H 10000 2900 50  0001 C CNN
+F 1 "+3.3V" H 10100 3175 39  0000 C CNN
+F 2 "" H 10000 3050 50  0001 C CNN
+F 3 "" H 10000 3050 50  0001 C CNN
+	1    10000 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 3050 10000 3100
+Wire Wire Line
+	10000 3500 10350 3500
+Connection ~ 10000 3500
+Wire Wire Line
+	9500 3500 9100 3500
+Connection ~ 9500 3500
+$Comp
+L Device:R R?
+U 1 1 612DE4FA
+P 9750 4500
+AR Path="/60ABCC10/612DE4FA" Ref="R?"  Part="1" 
+AR Path="/60B3EE27/612DE4FA" Ref="R?"  Part="1" 
+AR Path="/6119B01A/612DE4FA" Ref="R?"  Part="1" 
+AR Path="/612A6248/612DE4FA" Ref="R814"  Part="1" 
+F 0 "R814" V 9625 4400 31  0000 L CNN
+F 1 "10k" V 9675 4400 31  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9680 4500 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/447/PYu_RC_Group_51_RoHS_L_10-1664068.pdf" H 9750 4500 31  0001 C CNN
+F 4 "Yageo " H 9750 4500 31  0001 C CNN "Manufacturer"
+F 5 "0402" H 9750 4500 31  0001 C CNN "Package"
+F 6 "RC0402FR-0710KL" H 9750 4500 31  0001 C CNN "Part Number"
+F 7 "62.5mW" V 9825 4400 31  0000 L CNN "Nominal Power"
+F 8 "1%" V 9875 4400 31  0000 L CNN "Tolerance"
+F 9 "50V" H 9625 4575 31  0001 C CNN "Voltage"
+F 10 "Thick Film" H 9750 4500 31  0001 C CNN "Type"
+F 11 "100PPM/C" H 9750 4500 31  0001 C CNN "TempCo"
+	1    9750 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 612DE506
+P 9500 4750
+AR Path="/60ABCC10/612DE506" Ref="C?"  Part="1" 
+AR Path="/60B3EE27/612DE506" Ref="C?"  Part="1" 
+AR Path="/6119B01A/612DE506" Ref="C?"  Part="1" 
+AR Path="/612A6248/612DE506" Ref="C809"  Part="1" 
+F 0 "C809" H 9275 4800 31  0000 L CNN
+F 1 "100n" H 9275 4750 31  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9538 4600 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/281/1/GRM155C71H104JE19_01A-1983567.pdf" H 9500 4750 31  0001 C CNN
+F 4 "Murata Electronics" H 9500 4750 31  0001 C CNN "Manufacturer"
+F 5 "GRM155C71H104JE19D " H 9500 4750 31  0001 C CNN "Mfg number"
+F 6 "0402" H 9275 4700 31  0000 L CNN "Package"
+F 7 "50 V" H 9275 4650 31  0000 L CNN "Voltage"
+F 8 "X7S" H 9500 4750 31  0001 C CNN "Izolation material"
+F 9 "5%" H 9500 4750 31  0001 C CNN "Tolerance"
+F 10 "GRM155C71H104JE19D " H 9500 4750 50  0001 C CNN "Part Number"
+	1    9500 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 612DE514
+P 10000 4250
+AR Path="/60ABCC10/612DE514" Ref="R?"  Part="1" 
+AR Path="/60B3EE27/612DE514" Ref="R?"  Part="1" 
+AR Path="/6119B01A/612DE514" Ref="R?"  Part="1" 
+AR Path="/612A6248/612DE514" Ref="R811"  Part="1" 
+F 0 "R811" H 9775 4175 31  0000 L CNN
+F 1 "10k" H 9775 4225 31  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9930 4250 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/447/PYu_RC_Group_51_RoHS_L_10-1664068.pdf" H 10000 4250 31  0001 C CNN
+F 4 "Yageo " H 10000 4250 31  0001 C CNN "Manufacturer"
+F 5 "0402" H 10000 4250 31  0001 C CNN "Package"
+F 6 "RC0402FR-0710KL" H 10000 4250 31  0001 C CNN "Part Number"
+F 7 "62.5mW" H 9775 4275 31  0000 L CNN "Nominal Power"
+F 8 "1%" H 9775 4325 31  0000 L CNN "Tolerance"
+F 9 "50V" H 9875 4325 31  0001 C CNN "Voltage"
+F 10 "Thick Film" H 10000 4250 31  0001 C CNN "Type"
+F 11 "100PPM/C" H 10000 4250 31  0001 C CNN "TempCo"
+	1    10000 4250
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9600 4500 9500 4500
+Wire Wire Line
+	9500 4500 9500 4600
+Wire Wire Line
+	10000 4400 10000 4500
+Wire Wire Line
+	10000 4500 9900 4500
+$Comp
+L power:GND #PWR?
+U 1 1 612DE51E
+P 9500 4950
+AR Path="/60C0DB51/612DE51E" Ref="#PWR?"  Part="1" 
+AR Path="/60C6954B/612DE51E" Ref="#PWR?"  Part="1" 
+AR Path="/60B3EE27/612DE51E" Ref="#PWR?"  Part="1" 
+AR Path="/6119B01A/612DE51E" Ref="#PWR?"  Part="1" 
+AR Path="/612A6248/612DE51E" Ref="#PWR0823"  Part="1" 
+F 0 "#PWR0823" H 9500 4700 50  0001 C CNN
+F 1 "GND" H 9425 4850 28  0000 C CNN
+F 2 "" H 9500 4950 50  0001 C CNN
+F 3 "" H 9500 4950 50  0001 C CNN
+	1    9500 4950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 4950 9500 4900
+$Comp
+L power:+3.3V #PWR?
+U 1 1 612DE525
+P 10000 4050
+AR Path="/60ABCC10/612DE525" Ref="#PWR?"  Part="1" 
+AR Path="/60B3EE27/612DE525" Ref="#PWR?"  Part="1" 
+AR Path="/6119B01A/612DE525" Ref="#PWR?"  Part="1" 
+AR Path="/61367EFF/612DE525" Ref="#PWR?"  Part="1" 
+AR Path="/612A6248/612DE525" Ref="#PWR0816"  Part="1" 
+F 0 "#PWR0816" H 10000 3900 50  0001 C CNN
+F 1 "+3.3V" H 10100 4175 39  0000 C CNN
+F 2 "" H 10000 4050 50  0001 C CNN
+F 3 "" H 10000 4050 50  0001 C CNN
+	1    10000 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 4050 10000 4100
+Wire Wire Line
+	10000 4500 10350 4500
+Connection ~ 10000 4500
+Wire Wire Line
+	9500 4500 9100 4500
+Connection ~ 9500 4500
+$Comp
+L Device:R R?
+U 1 1 612DFF7B
+P 9750 5500
+AR Path="/60ABCC10/612DFF7B" Ref="R?"  Part="1" 
+AR Path="/60B3EE27/612DFF7B" Ref="R?"  Part="1" 
+AR Path="/6119B01A/612DFF7B" Ref="R?"  Part="1" 
+AR Path="/612A6248/612DFF7B" Ref="R818"  Part="1" 
+F 0 "R818" V 9625 5400 31  0000 L CNN
+F 1 "10k" V 9675 5400 31  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9680 5500 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/447/PYu_RC_Group_51_RoHS_L_10-1664068.pdf" H 9750 5500 31  0001 C CNN
+F 4 "Yageo " H 9750 5500 31  0001 C CNN "Manufacturer"
+F 5 "0402" H 9750 5500 31  0001 C CNN "Package"
+F 6 "RC0402FR-0710KL" H 9750 5500 31  0001 C CNN "Part Number"
+F 7 "62.5mW" V 9825 5400 31  0000 L CNN "Nominal Power"
+F 8 "1%" V 9875 5400 31  0000 L CNN "Tolerance"
+F 9 "50V" H 9625 5575 31  0001 C CNN "Voltage"
+F 10 "Thick Film" H 9750 5500 31  0001 C CNN "Type"
+F 11 "100PPM/C" H 9750 5500 31  0001 C CNN "TempCo"
+	1    9750 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 612DFF87
+P 9500 5750
+AR Path="/60ABCC10/612DFF87" Ref="C?"  Part="1" 
+AR Path="/60B3EE27/612DFF87" Ref="C?"  Part="1" 
+AR Path="/6119B01A/612DFF87" Ref="C?"  Part="1" 
+AR Path="/612A6248/612DFF87" Ref="C811"  Part="1" 
+F 0 "C811" H 9275 5800 31  0000 L CNN
+F 1 "100n" H 9275 5750 31  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9538 5600 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/281/1/GRM155C71H104JE19_01A-1983567.pdf" H 9500 5750 31  0001 C CNN
+F 4 "Murata Electronics" H 9500 5750 31  0001 C CNN "Manufacturer"
+F 5 "GRM155C71H104JE19D " H 9500 5750 31  0001 C CNN "Mfg number"
+F 6 "0402" H 9275 5700 31  0000 L CNN "Package"
+F 7 "50 V" H 9275 5650 31  0000 L CNN "Voltage"
+F 8 "X7S" H 9500 5750 31  0001 C CNN "Izolation material"
+F 9 "5%" H 9500 5750 31  0001 C CNN "Tolerance"
+F 10 "GRM155C71H104JE19D " H 9500 5750 50  0001 C CNN "Part Number"
+	1    9500 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 612DFF95
+P 10000 5250
+AR Path="/60ABCC10/612DFF95" Ref="R?"  Part="1" 
+AR Path="/60B3EE27/612DFF95" Ref="R?"  Part="1" 
+AR Path="/6119B01A/612DFF95" Ref="R?"  Part="1" 
+AR Path="/612A6248/612DFF95" Ref="R816"  Part="1" 
+F 0 "R816" H 9775 5175 31  0000 L CNN
+F 1 "10k" H 9775 5225 31  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9930 5250 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/447/PYu_RC_Group_51_RoHS_L_10-1664068.pdf" H 10000 5250 31  0001 C CNN
+F 4 "Yageo " H 10000 5250 31  0001 C CNN "Manufacturer"
+F 5 "0402" H 10000 5250 31  0001 C CNN "Package"
+F 6 "RC0402FR-0710KL" H 10000 5250 31  0001 C CNN "Part Number"
+F 7 "62.5mW" H 9775 5275 31  0000 L CNN "Nominal Power"
+F 8 "1%" H 9775 5325 31  0000 L CNN "Tolerance"
+F 9 "50V" H 9875 5325 31  0001 C CNN "Voltage"
+F 10 "Thick Film" H 10000 5250 31  0001 C CNN "Type"
+F 11 "100PPM/C" H 10000 5250 31  0001 C CNN "TempCo"
+	1    10000 5250
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9600 5500 9500 5500
+Wire Wire Line
+	9500 5500 9500 5600
+Wire Wire Line
+	10000 5400 10000 5500
+Wire Wire Line
+	10000 5500 9900 5500
+$Comp
+L power:GND #PWR?
+U 1 1 612DFF9F
+P 9500 5950
+AR Path="/60C0DB51/612DFF9F" Ref="#PWR?"  Part="1" 
+AR Path="/60C6954B/612DFF9F" Ref="#PWR?"  Part="1" 
+AR Path="/60B3EE27/612DFF9F" Ref="#PWR?"  Part="1" 
+AR Path="/6119B01A/612DFF9F" Ref="#PWR?"  Part="1" 
+AR Path="/612A6248/612DFF9F" Ref="#PWR0827"  Part="1" 
+F 0 "#PWR0827" H 9500 5700 50  0001 C CNN
+F 1 "GND" H 9425 5850 28  0000 C CNN
+F 2 "" H 9500 5950 50  0001 C CNN
+F 3 "" H 9500 5950 50  0001 C CNN
+	1    9500 5950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 5950 9500 5900
+$Comp
+L power:+3.3V #PWR?
+U 1 1 612DFFA6
+P 10000 5050
+AR Path="/60ABCC10/612DFFA6" Ref="#PWR?"  Part="1" 
+AR Path="/60B3EE27/612DFFA6" Ref="#PWR?"  Part="1" 
+AR Path="/6119B01A/612DFFA6" Ref="#PWR?"  Part="1" 
+AR Path="/61367EFF/612DFFA6" Ref="#PWR?"  Part="1" 
+AR Path="/612A6248/612DFFA6" Ref="#PWR0825"  Part="1" 
+F 0 "#PWR0825" H 10000 4900 50  0001 C CNN
+F 1 "+3.3V" H 10100 5175 39  0000 C CNN
+F 2 "" H 10000 5050 50  0001 C CNN
+F 3 "" H 10000 5050 50  0001 C CNN
+	1    10000 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 5050 10000 5100
+Wire Wire Line
+	10000 5500 10350 5500
+Connection ~ 10000 5500
+Wire Wire Line
+	9500 5500 9100 5500
+Connection ~ 9500 5500
+$Comp
+L Device:R R?
+U 1 1 612E251B
+P 8250 2500
+AR Path="/60ABCC10/612E251B" Ref="R?"  Part="1" 
+AR Path="/60B3EE27/612E251B" Ref="R?"  Part="1" 
+AR Path="/6119B01A/612E251B" Ref="R?"  Part="1" 
+AR Path="/612A6248/612E251B" Ref="R804"  Part="1" 
+F 0 "R804" V 8125 2400 31  0000 L CNN
+F 1 "10k" V 8175 2400 31  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8180 2500 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/447/PYu_RC_Group_51_RoHS_L_10-1664068.pdf" H 8250 2500 31  0001 C CNN
+F 4 "Yageo " H 8250 2500 31  0001 C CNN "Manufacturer"
+F 5 "0402" H 8250 2500 31  0001 C CNN "Package"
+F 6 "RC0402FR-0710KL" H 8250 2500 31  0001 C CNN "Part Number"
+F 7 "62.5mW" V 8325 2400 31  0000 L CNN "Nominal Power"
+F 8 "1%" V 8375 2400 31  0000 L CNN "Tolerance"
+F 9 "50V" H 8125 2575 31  0001 C CNN "Voltage"
+F 10 "Thick Film" H 8250 2500 31  0001 C CNN "Type"
+F 11 "100PPM/C" H 8250 2500 31  0001 C CNN "TempCo"
+	1    8250 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 612E2527
+P 8000 2750
+AR Path="/60ABCC10/612E2527" Ref="C?"  Part="1" 
+AR Path="/60B3EE27/612E2527" Ref="C?"  Part="1" 
+AR Path="/6119B01A/612E2527" Ref="C?"  Part="1" 
+AR Path="/612A6248/612E2527" Ref="C803"  Part="1" 
+F 0 "C803" H 7775 2800 31  0000 L CNN
+F 1 "100n" H 7775 2750 31  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8038 2600 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/281/1/GRM155C71H104JE19_01A-1983567.pdf" H 8000 2750 31  0001 C CNN
+F 4 "Murata Electronics" H 8000 2750 31  0001 C CNN "Manufacturer"
+F 5 "GRM155C71H104JE19D " H 8000 2750 31  0001 C CNN "Mfg number"
+F 6 "0402" H 7775 2700 31  0000 L CNN "Package"
+F 7 "50 V" H 7775 2650 31  0000 L CNN "Voltage"
+F 8 "X7S" H 8000 2750 31  0001 C CNN "Izolation material"
+F 9 "5%" H 8000 2750 31  0001 C CNN "Tolerance"
+F 10 "GRM155C71H104JE19D " H 8000 2750 50  0001 C CNN "Part Number"
+	1    8000 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 612E2535
+P 8500 2250
+AR Path="/60ABCC10/612E2535" Ref="R?"  Part="1" 
+AR Path="/60B3EE27/612E2535" Ref="R?"  Part="1" 
+AR Path="/6119B01A/612E2535" Ref="R?"  Part="1" 
+AR Path="/612A6248/612E2535" Ref="R802"  Part="1" 
+F 0 "R802" H 8275 2175 31  0000 L CNN
+F 1 "10k" H 8275 2225 31  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8430 2250 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/447/PYu_RC_Group_51_RoHS_L_10-1664068.pdf" H 8500 2250 31  0001 C CNN
+F 4 "Yageo " H 8500 2250 31  0001 C CNN "Manufacturer"
+F 5 "0402" H 8500 2250 31  0001 C CNN "Package"
+F 6 "RC0402FR-0710KL" H 8500 2250 31  0001 C CNN "Part Number"
+F 7 "62.5mW" H 8275 2275 31  0000 L CNN "Nominal Power"
+F 8 "1%" H 8275 2325 31  0000 L CNN "Tolerance"
+F 9 "50V" H 8375 2325 31  0001 C CNN "Voltage"
+F 10 "Thick Film" H 8500 2250 31  0001 C CNN "Type"
+F 11 "100PPM/C" H 8500 2250 31  0001 C CNN "TempCo"
+	1    8500 2250
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8100 2500 8000 2500
+Wire Wire Line
+	8000 2500 8000 2600
+Wire Wire Line
+	8500 2400 8500 2500
+Wire Wire Line
+	8500 2500 8400 2500
+$Comp
+L power:GND #PWR?
+U 1 1 612E253F
+P 8000 2950
+AR Path="/60C0DB51/612E253F" Ref="#PWR?"  Part="1" 
+AR Path="/60C6954B/612E253F" Ref="#PWR?"  Part="1" 
+AR Path="/60B3EE27/612E253F" Ref="#PWR?"  Part="1" 
+AR Path="/6119B01A/612E253F" Ref="#PWR?"  Part="1" 
+AR Path="/612A6248/612E253F" Ref="#PWR0808"  Part="1" 
+F 0 "#PWR0808" H 8000 2700 50  0001 C CNN
+F 1 "GND" H 7925 2850 28  0000 C CNN
+F 2 "" H 8000 2950 50  0001 C CNN
+F 3 "" H 8000 2950 50  0001 C CNN
+	1    8000 2950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 2950 8000 2900
+$Comp
+L power:+3.3V #PWR?
+U 1 1 612E2546
+P 8500 2050
+AR Path="/60ABCC10/612E2546" Ref="#PWR?"  Part="1" 
+AR Path="/60B3EE27/612E2546" Ref="#PWR?"  Part="1" 
+AR Path="/6119B01A/612E2546" Ref="#PWR?"  Part="1" 
+AR Path="/61367EFF/612E2546" Ref="#PWR?"  Part="1" 
+AR Path="/612A6248/612E2546" Ref="#PWR0803"  Part="1" 
+F 0 "#PWR0803" H 8500 1900 50  0001 C CNN
+F 1 "+3.3V" H 8600 2175 39  0000 C CNN
+F 2 "" H 8500 2050 50  0001 C CNN
+F 3 "" H 8500 2050 50  0001 C CNN
+	1    8500 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 2050 8500 2100
+Wire Wire Line
+	8500 2500 8850 2500
+Connection ~ 8500 2500
+Wire Wire Line
+	8000 2500 7600 2500
+Connection ~ 8000 2500
+$Comp
+L Device:R R?
+U 1 1 612E5778
+P 8250 3500
+AR Path="/60ABCC10/612E5778" Ref="R?"  Part="1" 
+AR Path="/60B3EE27/612E5778" Ref="R?"  Part="1" 
+AR Path="/6119B01A/612E5778" Ref="R?"  Part="1" 
+AR Path="/612A6248/612E5778" Ref="R808"  Part="1" 
+F 0 "R808" V 8125 3400 31  0000 L CNN
+F 1 "10k" V 8175 3400 31  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8180 3500 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/447/PYu_RC_Group_51_RoHS_L_10-1664068.pdf" H 8250 3500 31  0001 C CNN
+F 4 "Yageo " H 8250 3500 31  0001 C CNN "Manufacturer"
+F 5 "0402" H 8250 3500 31  0001 C CNN "Package"
+F 6 "RC0402FR-0710KL" H 8250 3500 31  0001 C CNN "Part Number"
+F 7 "62.5mW" V 8325 3400 31  0000 L CNN "Nominal Power"
+F 8 "1%" V 8375 3400 31  0000 L CNN "Tolerance"
+F 9 "50V" H 8125 3575 31  0001 C CNN "Voltage"
+F 10 "Thick Film" H 8250 3500 31  0001 C CNN "Type"
+F 11 "100PPM/C" H 8250 3500 31  0001 C CNN "TempCo"
+	1    8250 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 612E5784
+P 8000 3750
+AR Path="/60ABCC10/612E5784" Ref="C?"  Part="1" 
+AR Path="/60B3EE27/612E5784" Ref="C?"  Part="1" 
+AR Path="/6119B01A/612E5784" Ref="C?"  Part="1" 
+AR Path="/612A6248/612E5784" Ref="C805"  Part="1" 
+F 0 "C805" H 7775 3800 31  0000 L CNN
+F 1 "100n" H 7775 3750 31  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8038 3600 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/281/1/GRM155C71H104JE19_01A-1983567.pdf" H 8000 3750 31  0001 C CNN
+F 4 "Murata Electronics" H 8000 3750 31  0001 C CNN "Manufacturer"
+F 5 "GRM155C71H104JE19D " H 8000 3750 31  0001 C CNN "Mfg number"
+F 6 "0402" H 7775 3700 31  0000 L CNN "Package"
+F 7 "50 V" H 7775 3650 31  0000 L CNN "Voltage"
+F 8 "X7S" H 8000 3750 31  0001 C CNN "Izolation material"
+F 9 "5%" H 8000 3750 31  0001 C CNN "Tolerance"
+F 10 "GRM155C71H104JE19D " H 8000 3750 50  0001 C CNN "Part Number"
+	1    8000 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 612E5792
+P 8500 3250
+AR Path="/60ABCC10/612E5792" Ref="R?"  Part="1" 
+AR Path="/60B3EE27/612E5792" Ref="R?"  Part="1" 
+AR Path="/6119B01A/612E5792" Ref="R?"  Part="1" 
+AR Path="/612A6248/612E5792" Ref="R806"  Part="1" 
+F 0 "R806" H 8275 3175 31  0000 L CNN
+F 1 "10k" H 8275 3225 31  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8430 3250 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/447/PYu_RC_Group_51_RoHS_L_10-1664068.pdf" H 8500 3250 31  0001 C CNN
+F 4 "Yageo " H 8500 3250 31  0001 C CNN "Manufacturer"
+F 5 "0402" H 8500 3250 31  0001 C CNN "Package"
+F 6 "RC0402FR-0710KL" H 8500 3250 31  0001 C CNN "Part Number"
+F 7 "62.5mW" H 8275 3275 31  0000 L CNN "Nominal Power"
+F 8 "1%" H 8275 3325 31  0000 L CNN "Tolerance"
+F 9 "50V" H 8375 3325 31  0001 C CNN "Voltage"
+F 10 "Thick Film" H 8500 3250 31  0001 C CNN "Type"
+F 11 "100PPM/C" H 8500 3250 31  0001 C CNN "TempCo"
+	1    8500 3250
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8100 3500 8000 3500
+Wire Wire Line
+	8000 3500 8000 3600
+Wire Wire Line
+	8500 3400 8500 3500
+Wire Wire Line
+	8500 3500 8400 3500
+$Comp
+L power:GND #PWR?
+U 1 1 612E579C
+P 8000 3950
+AR Path="/60C0DB51/612E579C" Ref="#PWR?"  Part="1" 
+AR Path="/60C6954B/612E579C" Ref="#PWR?"  Part="1" 
+AR Path="/60B3EE27/612E579C" Ref="#PWR?"  Part="1" 
+AR Path="/6119B01A/612E579C" Ref="#PWR?"  Part="1" 
+AR Path="/612A6248/612E579C" Ref="#PWR0813"  Part="1" 
+F 0 "#PWR0813" H 8000 3700 50  0001 C CNN
+F 1 "GND" H 7925 3850 28  0000 C CNN
+F 2 "" H 8000 3950 50  0001 C CNN
+F 3 "" H 8000 3950 50  0001 C CNN
+	1    8000 3950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 3950 8000 3900
+$Comp
+L power:+3.3V #PWR?
+U 1 1 612E57A3
+P 8500 3050
+AR Path="/60ABCC10/612E57A3" Ref="#PWR?"  Part="1" 
+AR Path="/60B3EE27/612E57A3" Ref="#PWR?"  Part="1" 
+AR Path="/6119B01A/612E57A3" Ref="#PWR?"  Part="1" 
+AR Path="/61367EFF/612E57A3" Ref="#PWR?"  Part="1" 
+AR Path="/612A6248/612E57A3" Ref="#PWR0810"  Part="1" 
+F 0 "#PWR0810" H 8500 2900 50  0001 C CNN
+F 1 "+3.3V" H 8600 3175 39  0000 C CNN
+F 2 "" H 8500 3050 50  0001 C CNN
+F 3 "" H 8500 3050 50  0001 C CNN
+	1    8500 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 3050 8500 3100
+Wire Wire Line
+	8500 3500 8850 3500
+Connection ~ 8500 3500
+Wire Wire Line
+	8000 3500 7600 3500
+Connection ~ 8000 3500
+$Comp
+L Device:R R?
+U 1 1 612E813E
+P 8250 4500
+AR Path="/60ABCC10/612E813E" Ref="R?"  Part="1" 
+AR Path="/60B3EE27/612E813E" Ref="R?"  Part="1" 
+AR Path="/6119B01A/612E813E" Ref="R?"  Part="1" 
+AR Path="/612A6248/612E813E" Ref="R813"  Part="1" 
+F 0 "R813" V 8125 4400 31  0000 L CNN
+F 1 "10k" V 8175 4400 31  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8180 4500 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/447/PYu_RC_Group_51_RoHS_L_10-1664068.pdf" H 8250 4500 31  0001 C CNN
+F 4 "Yageo " H 8250 4500 31  0001 C CNN "Manufacturer"
+F 5 "0402" H 8250 4500 31  0001 C CNN "Package"
+F 6 "RC0402FR-0710KL" H 8250 4500 31  0001 C CNN "Part Number"
+F 7 "62.5mW" V 8325 4400 31  0000 L CNN "Nominal Power"
+F 8 "1%" V 8375 4400 31  0000 L CNN "Tolerance"
+F 9 "50V" H 8125 4575 31  0001 C CNN "Voltage"
+F 10 "Thick Film" H 8250 4500 31  0001 C CNN "Type"
+F 11 "100PPM/C" H 8250 4500 31  0001 C CNN "TempCo"
+	1    8250 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 612E814A
+P 8000 4750
+AR Path="/60ABCC10/612E814A" Ref="C?"  Part="1" 
+AR Path="/60B3EE27/612E814A" Ref="C?"  Part="1" 
+AR Path="/6119B01A/612E814A" Ref="C?"  Part="1" 
+AR Path="/612A6248/612E814A" Ref="C808"  Part="1" 
+F 0 "C808" H 7775 4800 31  0000 L CNN
+F 1 "100n" H 7775 4750 31  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8038 4600 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/281/1/GRM155C71H104JE19_01A-1983567.pdf" H 8000 4750 31  0001 C CNN
+F 4 "Murata Electronics" H 8000 4750 31  0001 C CNN "Manufacturer"
+F 5 "GRM155C71H104JE19D " H 8000 4750 31  0001 C CNN "Mfg number"
+F 6 "0402" H 7775 4700 31  0000 L CNN "Package"
+F 7 "50 V" H 7775 4650 31  0000 L CNN "Voltage"
+F 8 "X7S" H 8000 4750 31  0001 C CNN "Izolation material"
+F 9 "5%" H 8000 4750 31  0001 C CNN "Tolerance"
+F 10 "GRM155C71H104JE19D " H 8000 4750 50  0001 C CNN "Part Number"
+	1    8000 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 612E8158
+P 8500 4250
+AR Path="/60ABCC10/612E8158" Ref="R?"  Part="1" 
+AR Path="/60B3EE27/612E8158" Ref="R?"  Part="1" 
+AR Path="/6119B01A/612E8158" Ref="R?"  Part="1" 
+AR Path="/612A6248/612E8158" Ref="R810"  Part="1" 
+F 0 "R810" H 8275 4175 31  0000 L CNN
+F 1 "10k" H 8275 4225 31  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8430 4250 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/447/PYu_RC_Group_51_RoHS_L_10-1664068.pdf" H 8500 4250 31  0001 C CNN
+F 4 "Yageo " H 8500 4250 31  0001 C CNN "Manufacturer"
+F 5 "0402" H 8500 4250 31  0001 C CNN "Package"
+F 6 "RC0402FR-0710KL" H 8500 4250 31  0001 C CNN "Part Number"
+F 7 "62.5mW" H 8275 4275 31  0000 L CNN "Nominal Power"
+F 8 "1%" H 8275 4325 31  0000 L CNN "Tolerance"
+F 9 "50V" H 8375 4325 31  0001 C CNN "Voltage"
+F 10 "Thick Film" H 8500 4250 31  0001 C CNN "Type"
+F 11 "100PPM/C" H 8500 4250 31  0001 C CNN "TempCo"
+	1    8500 4250
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8100 4500 8000 4500
+Wire Wire Line
+	8000 4500 8000 4600
+Wire Wire Line
+	8500 4400 8500 4500
+Wire Wire Line
+	8500 4500 8400 4500
+$Comp
+L power:GND #PWR?
+U 1 1 612E8162
+P 8000 4950
+AR Path="/60C0DB51/612E8162" Ref="#PWR?"  Part="1" 
+AR Path="/60C6954B/612E8162" Ref="#PWR?"  Part="1" 
+AR Path="/60B3EE27/612E8162" Ref="#PWR?"  Part="1" 
+AR Path="/6119B01A/612E8162" Ref="#PWR?"  Part="1" 
+AR Path="/612A6248/612E8162" Ref="#PWR0822"  Part="1" 
+F 0 "#PWR0822" H 8000 4700 50  0001 C CNN
+F 1 "GND" H 7925 4850 28  0000 C CNN
+F 2 "" H 8000 4950 50  0001 C CNN
+F 3 "" H 8000 4950 50  0001 C CNN
+	1    8000 4950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 4950 8000 4900
+$Comp
+L power:+3.3V #PWR?
+U 1 1 612E8169
+P 8500 4050
+AR Path="/60ABCC10/612E8169" Ref="#PWR?"  Part="1" 
+AR Path="/60B3EE27/612E8169" Ref="#PWR?"  Part="1" 
+AR Path="/6119B01A/612E8169" Ref="#PWR?"  Part="1" 
+AR Path="/61367EFF/612E8169" Ref="#PWR?"  Part="1" 
+AR Path="/612A6248/612E8169" Ref="#PWR0815"  Part="1" 
+F 0 "#PWR0815" H 8500 3900 50  0001 C CNN
+F 1 "+3.3V" H 8600 4175 39  0000 C CNN
+F 2 "" H 8500 4050 50  0001 C CNN
+F 3 "" H 8500 4050 50  0001 C CNN
+	1    8500 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 4050 8500 4100
+Wire Wire Line
+	8500 4500 8850 4500
+Connection ~ 8500 4500
+Wire Wire Line
+	8000 4500 7600 4500
+Connection ~ 8000 4500
+$Comp
+L Device:R R?
+U 1 1 612EBB48
+P 8250 5500
+AR Path="/60ABCC10/612EBB48" Ref="R?"  Part="1" 
+AR Path="/60B3EE27/612EBB48" Ref="R?"  Part="1" 
+AR Path="/6119B01A/612EBB48" Ref="R?"  Part="1" 
+AR Path="/612A6248/612EBB48" Ref="R817"  Part="1" 
+F 0 "R817" V 8125 5400 31  0000 L CNN
+F 1 "10k" V 8175 5400 31  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8180 5500 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/447/PYu_RC_Group_51_RoHS_L_10-1664068.pdf" H 8250 5500 31  0001 C CNN
+F 4 "Yageo " H 8250 5500 31  0001 C CNN "Manufacturer"
+F 5 "0402" H 8250 5500 31  0001 C CNN "Package"
+F 6 "RC0402FR-0710KL" H 8250 5500 31  0001 C CNN "Part Number"
+F 7 "62.5mW" V 8325 5400 31  0000 L CNN "Nominal Power"
+F 8 "1%" V 8375 5400 31  0000 L CNN "Tolerance"
+F 9 "50V" H 8125 5575 31  0001 C CNN "Voltage"
+F 10 "Thick Film" H 8250 5500 31  0001 C CNN "Type"
+F 11 "100PPM/C" H 8250 5500 31  0001 C CNN "TempCo"
+	1    8250 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 612EBB54
+P 8000 5750
+AR Path="/60ABCC10/612EBB54" Ref="C?"  Part="1" 
+AR Path="/60B3EE27/612EBB54" Ref="C?"  Part="1" 
+AR Path="/6119B01A/612EBB54" Ref="C?"  Part="1" 
+AR Path="/612A6248/612EBB54" Ref="C810"  Part="1" 
+F 0 "C810" H 7775 5800 31  0000 L CNN
+F 1 "100n" H 7775 5750 31  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8038 5600 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/281/1/GRM155C71H104JE19_01A-1983567.pdf" H 8000 5750 31  0001 C CNN
+F 4 "Murata Electronics" H 8000 5750 31  0001 C CNN "Manufacturer"
+F 5 "GRM155C71H104JE19D " H 8000 5750 31  0001 C CNN "Mfg number"
+F 6 "0402" H 7775 5700 31  0000 L CNN "Package"
+F 7 "50 V" H 7775 5650 31  0000 L CNN "Voltage"
+F 8 "X7S" H 8000 5750 31  0001 C CNN "Izolation material"
+F 9 "5%" H 8000 5750 31  0001 C CNN "Tolerance"
+F 10 "GRM155C71H104JE19D " H 8000 5750 50  0001 C CNN "Part Number"
+	1    8000 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 612EBB62
+P 8500 5250
+AR Path="/60ABCC10/612EBB62" Ref="R?"  Part="1" 
+AR Path="/60B3EE27/612EBB62" Ref="R?"  Part="1" 
+AR Path="/6119B01A/612EBB62" Ref="R?"  Part="1" 
+AR Path="/612A6248/612EBB62" Ref="R815"  Part="1" 
+F 0 "R815" H 8275 5175 31  0000 L CNN
+F 1 "10k" H 8275 5225 31  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8430 5250 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/447/PYu_RC_Group_51_RoHS_L_10-1664068.pdf" H 8500 5250 31  0001 C CNN
+F 4 "Yageo " H 8500 5250 31  0001 C CNN "Manufacturer"
+F 5 "0402" H 8500 5250 31  0001 C CNN "Package"
+F 6 "RC0402FR-0710KL" H 8500 5250 31  0001 C CNN "Part Number"
+F 7 "62.5mW" H 8275 5275 31  0000 L CNN "Nominal Power"
+F 8 "1%" H 8275 5325 31  0000 L CNN "Tolerance"
+F 9 "50V" H 8375 5325 31  0001 C CNN "Voltage"
+F 10 "Thick Film" H 8500 5250 31  0001 C CNN "Type"
+F 11 "100PPM/C" H 8500 5250 31  0001 C CNN "TempCo"
+	1    8500 5250
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8100 5500 8000 5500
+Wire Wire Line
+	8000 5500 8000 5600
+Wire Wire Line
+	8500 5400 8500 5500
+Wire Wire Line
+	8500 5500 8400 5500
+$Comp
+L power:GND #PWR?
+U 1 1 612EBB6C
+P 8000 5950
+AR Path="/60C0DB51/612EBB6C" Ref="#PWR?"  Part="1" 
+AR Path="/60C6954B/612EBB6C" Ref="#PWR?"  Part="1" 
+AR Path="/60B3EE27/612EBB6C" Ref="#PWR?"  Part="1" 
+AR Path="/6119B01A/612EBB6C" Ref="#PWR?"  Part="1" 
+AR Path="/612A6248/612EBB6C" Ref="#PWR0826"  Part="1" 
+F 0 "#PWR0826" H 8000 5700 50  0001 C CNN
+F 1 "GND" H 7925 5850 28  0000 C CNN
+F 2 "" H 8000 5950 50  0001 C CNN
+F 3 "" H 8000 5950 50  0001 C CNN
+	1    8000 5950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 5950 8000 5900
+$Comp
+L power:+3.3V #PWR?
+U 1 1 612EBB73
+P 8500 5050
+AR Path="/60ABCC10/612EBB73" Ref="#PWR?"  Part="1" 
+AR Path="/60B3EE27/612EBB73" Ref="#PWR?"  Part="1" 
+AR Path="/6119B01A/612EBB73" Ref="#PWR?"  Part="1" 
+AR Path="/61367EFF/612EBB73" Ref="#PWR?"  Part="1" 
+AR Path="/612A6248/612EBB73" Ref="#PWR0824"  Part="1" 
+F 0 "#PWR0824" H 8500 4900 50  0001 C CNN
+F 1 "+3.3V" H 8600 5175 39  0000 C CNN
+F 2 "" H 8500 5050 50  0001 C CNN
+F 3 "" H 8500 5050 50  0001 C CNN
+	1    8500 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 5050 8500 5100
+Wire Wire Line
+	8500 5500 8850 5500
+Connection ~ 8500 5500
+Wire Wire Line
+	8000 5500 7600 5500
+Connection ~ 8000 5500
+Text Label 9100 3500 0    39   ~ 0
+GPA1
+Text Label 9100 4500 0    39   ~ 0
+GPA2
+Text Label 9100 5500 0    39   ~ 0
+GPA3
+Text Label 7600 2500 0    39   ~ 0
+GPA4
+Text Label 7600 3500 0    39   ~ 0
+GPA5
+Text Label 7600 4500 0    39   ~ 0
+GPA6
+Text Label 7600 5500 0    39   ~ 0
+GPA7
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J801
+U 1 1 612F08A3
+P 5000 6600
+F 0 "J801" H 5000 7000 50  0000 C CNN
+F 1 "Conn_02x08_Odd_Even" H 5050 7050 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 5000 6600 50  0001 C CNN
+F 3 "~" H 5000 6600 50  0001 C CNN
+	1    5000 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 612D9EA5
+P 9500 3950
+AR Path="/60C0DB51/612D9EA5" Ref="#PWR?"  Part="1" 
+AR Path="/60C6954B/612D9EA5" Ref="#PWR?"  Part="1" 
+AR Path="/60B3EE27/612D9EA5" Ref="#PWR?"  Part="1" 
+AR Path="/6119B01A/612D9EA5" Ref="#PWR?"  Part="1" 
+AR Path="/612A6248/612D9EA5" Ref="#PWR0814"  Part="1" 
+F 0 "#PWR0814" H 9500 3700 50  0001 C CNN
+F 1 "GND" H 9425 3850 28  0000 C CNN
+F 2 "" H 9500 3950 50  0001 C CNN
+F 3 "" H 9500 3950 50  0001 C CNN
+	1    9500 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6133568A
+P 5400 7100
+AR Path="/60C0DB51/6133568A" Ref="#PWR?"  Part="1" 
+AR Path="/60C6954B/6133568A" Ref="#PWR?"  Part="1" 
+AR Path="/60B3EE27/6133568A" Ref="#PWR?"  Part="1" 
+AR Path="/6119B01A/6133568A" Ref="#PWR?"  Part="1" 
+AR Path="/612A6248/6133568A" Ref="#PWR0828"  Part="1" 
+F 0 "#PWR0828" H 5400 6850 50  0001 C CNN
+F 1 "GND" H 5325 7000 28  0000 C CNN
+F 2 "" H 5400 7100 50  0001 C CNN
+F 3 "" H 5400 7100 50  0001 C CNN
+	1    5400 7100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 7000 5400 7000
+Wire Wire Line
+	5400 7000 5400 7100
+Wire Wire Line
+	5300 6300 5400 6300
+Wire Wire Line
+	5400 6300 5400 6400
+Connection ~ 5400 7000
+Wire Wire Line
+	5300 6900 5400 6900
+Connection ~ 5400 6900
+Wire Wire Line
+	5400 6900 5400 7000
+Wire Wire Line
+	5300 6800 5400 6800
+Connection ~ 5400 6800
+Wire Wire Line
+	5400 6800 5400 6900
+Wire Wire Line
+	5300 6700 5400 6700
+Connection ~ 5400 6700
+Wire Wire Line
+	5400 6700 5400 6800
+Wire Wire Line
+	5300 6600 5400 6600
+Connection ~ 5400 6600
+Wire Wire Line
+	5400 6600 5400 6700
+Wire Wire Line
+	5300 6500 5400 6500
+Connection ~ 5400 6500
+Wire Wire Line
+	5400 6500 5400 6600
+Wire Wire Line
+	5300 6400 5400 6400
+Connection ~ 5400 6400
+Wire Wire Line
+	5400 6400 5400 6500
+Text Label 4500 7000 0    50   ~ 0
+IN_A0
+Text Label 4500 6900 0    50   ~ 0
+IN_A1
+Text Label 4500 6800 0    50   ~ 0
+IN_A2
+Text Label 4500 6700 0    50   ~ 0
+IN_A3
+Text Label 4500 6600 0    50   ~ 0
+IN_A4
+Text Label 4500 6500 0    50   ~ 0
+IN_A5
+Text Label 4500 6400 0    50   ~ 0
+IN_A6
+Text Label 4500 6300 0    50   ~ 0
+IN_A7
+Wire Wire Line
+	4800 7000 4500 7000
+Wire Wire Line
+	4800 6900 4500 6900
+Wire Wire Line
+	4800 6800 4500 6800
+Wire Wire Line
+	4800 6700 4500 6700
+Wire Wire Line
+	4800 6600 4500 6600
+Wire Wire Line
+	4800 6500 4500 6500
+Wire Wire Line
+	4800 6400 4500 6400
+Wire Wire Line
+	4800 6300 4500 6300
+Wire Wire Line
+	5100 3100 5550 3100
+Wire Wire Line
+	5100 3200 5550 3200
+Wire Wire Line
+	5100 3300 5550 3300
+Wire Wire Line
+	5100 3400 5550 3400
+Wire Wire Line
+	5100 3500 5550 3500
+Wire Wire Line
+	5100 3600 5550 3600
+NoConn ~ 5100 3700
+NoConn ~ 5100 3800
+Text HLabel 1425 6450 0    50   Output ~ 0
+I2C1_SCL
+Text HLabel 1425 6550 0    50   BiDi ~ 0
+I2C1_SDA
+Text Label 2250 6450 2    39   ~ 0
+I2C1_SCL
+Text Label 2250 6550 2    39   ~ 0
+I2C1_SDA
+Wire Wire Line
+	2250 6550 1425 6550
+Wire Wire Line
+	2250 6450 1425 6450
+Text Label 3650 3300 0    39   ~ 0
+I2C1_SDA
+Text Label 3650 3200 0    39   ~ 0
+I2C1_SCL
+Text HLabel 1400 6750 0    50   Output ~ 0
+EXP_INT_B
+Text HLabel 1400 6650 0    50   Output ~ 0
+EXP_INT_A
+Wire Wire Line
+	1400 6750 2250 6750
+Wire Wire Line
+	2250 6650 1400 6650
+Text Label 2250 6750 2    39   ~ 0
+EXP_INT_B
+Text Label 2250 6650 2    39   ~ 0
+EXP_INT_A
+Text Label 3650 2550 0    39   ~ 0
+EXP_INT_A
+Text Label 3650 2450 0    39   ~ 0
+EXP_INT_B
+Text Label 5550 3100 2    39   ~ 0
+STAND1
+Entry Wire Line
+	5550 3100 5650 3000
+Entry Wire Line
+	5550 3200 5650 3100
+Entry Wire Line
+	5550 3300 5650 3200
+Entry Wire Line
+	5550 3400 5650 3300
+Entry Wire Line
+	5550 3500 5650 3400
+Entry Wire Line
+	5550 3600 5650 3500
+Text Label 5550 3200 2    39   ~ 0
+STAND2
+Text Label 5550 3400 2    39   ~ 0
+STAND4
+Text Label 5550 3500 2    39   ~ 0
+STAND5
+Text Label 5550 3300 2    39   ~ 0
+STAND3
+Text Label 5550 3600 2    39   ~ 0
+STAND6
+Text HLabel 6150 2900 2    39   UnSpc ~ 0
+STAND[1..6]
+$Comp
+L power:VDD #PWR?
+U 1 1 615C5E66
+P 4050 2150
+AR Path="/6119B01A/615C5E66" Ref="#PWR?"  Part="1" 
+AR Path="/612A6248/615C5E66" Ref="#PWR0805"  Part="1" 
+F 0 "#PWR0805" H 4050 2000 50  0001 C CNN
+F 1 "VDD" H 4100 2250 28  0000 C CNN
+F 2 "" H 4050 2150 50  0001 C CNN
+F 3 "" H 4050 2150 50  0001 C CNN
+	1    4050 2150
+	1    0    0    -1  
+$EndComp
+Text Notes 750  1250 0    118  ~ 0
+Decaupling capacitors
+Text Notes 5000 900  0    157  ~ 31
+IO EXPANDER
+Wire Notes Line width 16 style solid rgb(0, 72, 0)
+	475  1000 11225 1000
+Wire Notes Line
+	550  1050 550  2950
+Wire Notes Line
+	550  2950 3000 2950
+Wire Notes Line
+	3000 2950 3000 1050
+Wire Notes Line
+	3000 1050 550  1050
+Text Notes 750  3250 0    118  ~ 0
+Reset circuit
+Wire Notes Line
+	550  3050 550  5500
+Wire Notes Line
+	550  5500 3000 5500
+Wire Notes Line
+	3000 5500 3000 3050
+Wire Notes Line
+	3000 3050 550  3050
+Wire Notes Line
+	550  5600 550  7700
+Wire Notes Line
+	550  7700 3000 7700
+Wire Notes Line
+	3000 7700 3000 5600
+Wire Notes Line
+	3000 5600 550  5600
+Text Notes 750  5800 0    118  ~ 0
+Output harness
+Wire Notes Line
+	3100 5600 3100 7700
+Wire Notes Line
+	3100 7700 6900 7700
+Wire Notes Line
+	6900 7700 6900 5600
+Wire Notes Line
+	6900 5600 3100 5600
+Text Notes 3300 5800 0    118  ~ 0
+Output connector
+Wire Notes Line
+	3100 1050 3100 5500
+Wire Notes Line
+	3100 5500 6900 5500
+Wire Notes Line
+	6900 5500 6900 1050
+Wire Notes Line
+	6900 1050 3100 1050
+Text Notes 3300 1250 0    118  ~ 0
+IO Expander
+Wire Notes Line
+	7000 1050 7000 6450
+Wire Notes Line
+	7000 6450 11150 6450
+Wire Notes Line
+	11150 6450 11150 1050
+Wire Notes Line
+	11150 1050 7000 1050
+Text Notes 7200 1250 0    118  ~ 0
+Input filter with pull-up resistors
+Wire Bus Line
+	5650 2900 6150 2900
+Text Label 5650 2900 0    39   ~ 0
+STAND[1..6]
+$Comp
+L Device:R R?
+U 1 1 612F403C
+P 1200 2000
+AR Path="/60ABCC10/612F403C" Ref="R?"  Part="1" 
+AR Path="/60B3EE27/612F403C" Ref="R?"  Part="1" 
+AR Path="/6119B01A/612F403C" Ref="R?"  Part="1" 
+AR Path="/61367EFF/612F403C" Ref="R?"  Part="1" 
+AR Path="/612A6248/612F403C" Ref="R801"  Part="1" 
+F 0 "R801" V 1325 1900 31  0000 L CNN
+F 1 "0R" V 1275 1900 31  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1130 2000 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/54/crxxxxx-1858361.pdf" H 1200 2000 31  0001 C CNN
+F 4 "Bourns" H 1200 2000 31  0001 C CNN "Manufacturer"
+F 5 "0402" H 1200 2000 31  0001 C CNN "Package"
+F 6 "CR0402-J/-000GLF" H 1200 2000 31  0001 C CNN "Part Number"
+F 7 "-" V 1125 1900 31  0001 L CNN "Nominal Power"
+F 8 "5%" V 1075 1900 31  0001 L CNN "Tolerance"
+F 9 "-" H 1075 2075 31  0001 C CNN "Voltage"
+F 10 "Thick Film" H 1200 2000 31  0001 C CNN "Type"
+F 11 "100PPM/C" H 1200 2000 31  0001 C CNN "TempCo"
+	1    1200 2000
+	0    1    -1   0   
+$EndComp
+Text GLabel 1850 4225 0    50   Input ~ 0
+RESET
+Wire Wire Line
+	1850 4225 1950 4225
+Wire Wire Line
+	1950 4225 1950 4475
+Wire Wire Line
+	1500 4475 1950 4475
+Wire Bus Line
+	5650 2900 5650 3500
+$EndSCHEMATC

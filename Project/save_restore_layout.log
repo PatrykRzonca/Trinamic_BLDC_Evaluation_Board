@@ -1,0 +1,2 @@
+08-13 22:57:11 STDERR 337:/home/patrys/.kicad/scripting/plugins/CircularZone/CircularZoneDlg.py:22: wxPyDeprecationWarning: Call to deprecated item. Use SetSizeHints instead.
+08-13 22:57:11 STDERR 337:  self.SetSizeHintsSz( wx.DefaultSize, wx.DefaultSize )

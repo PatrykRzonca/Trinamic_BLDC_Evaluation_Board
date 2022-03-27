@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name eval_board_tmc6200-ta)(type KiCad)(uri ${KIPRJMOD}/eval_board_tmc6200-ta.pretty)(options "")(descr ""))
+  (lib (name FZ6N_GATEWAY)(type KiCad)(uri /home/patrys/git_KiCad_Hardware/GATEWAY/FZ6N_GATEWAY/FZ6N_GATEWAY.pretty)(options "")(descr ""))
+)

@@ -1,0 +1,416 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 8
+Title "TMC6200-TA-T Eval Board"
+Date "2021-09-03"
+Rev "ED A0"
+Comp "Quasi Peak"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L eval_board_tmc6200-ta:DMT68M8LFV-7 Q?
+U 1 1 610CF284
+P 5000 3125
+AR Path="/610CF284" Ref="Q?"  Part="1" 
+AR Path="/610C9B8B/610CF284" Ref="Q301"  Part="1" 
+AR Path="/610E2C9B/610CF284" Ref="Q401"  Part="1" 
+AR Path="/611F19F3/61204F1B/610CF284" Ref="Q401"  Part="1" 
+AR Path="/613B0D72/610CF284" Ref="Q501"  Part="1" 
+AR Path="/611F19F3/61121920/610CF284" Ref="Q401"  Part="1" 
+AR Path="/6119A625/61121920/610CF284" Ref="Q?"  Part="1" 
+F 0 "Q401" H 5100 3150 31  0000 L CNN
+F 1 "DMT68M8LFV-7" H 5100 3100 31  0000 L CNN
+F 2 "eval_board_tmc6200-ta:DMT68M8LFV-7_PowerDI5060-8" H 5000 3125 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/115/diodes_inc_diod-s-a0007810738-1-1749126.pdf" H 5000 3125 31  0001 C CNN
+	1    5000 3125
+	1    0    0    -1  
+$EndComp
+$Comp
+L eval_board_tmc6200-ta:DMT68M8LFV-7 Q?
+U 1 1 610CF28A
+P 5000 4200
+AR Path="/610CF28A" Ref="Q?"  Part="1" 
+AR Path="/610C9B8B/610CF28A" Ref="Q302"  Part="1" 
+AR Path="/610E2C9B/610CF28A" Ref="Q402"  Part="1" 
+AR Path="/611F19F3/61204F1B/610CF28A" Ref="Q402"  Part="1" 
+AR Path="/613B0D72/610CF28A" Ref="Q502"  Part="1" 
+AR Path="/611F19F3/61121920/610CF28A" Ref="Q402"  Part="1" 
+AR Path="/6119A625/61121920/610CF28A" Ref="Q?"  Part="1" 
+F 0 "Q402" H 5100 4225 31  0000 L CNN
+F 1 "DMT68M8LFV-7" H 5100 4175 31  0000 L CNN
+F 2 "eval_board_tmc6200-ta:DMT68M8LFV-7_PowerDI5060-8" H 5000 4200 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/115/diodes_inc_diod-s-a0007810738-1-1749126.pdf" H 5000 4200 31  0001 C CNN
+	1    5000 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 610CF290
+P 4450 3125
+AR Path="/610CF290" Ref="R?"  Part="1" 
+AR Path="/610C9B8B/610CF290" Ref="R301"  Part="1" 
+AR Path="/610E2C9B/610CF290" Ref="R402"  Part="1" 
+AR Path="/611F19F3/61204F1B/610CF290" Ref="R402"  Part="1" 
+AR Path="/613B0D72/610CF290" Ref="R502"  Part="1" 
+AR Path="/611F19F3/61121920/610CF290" Ref="R402"  Part="1" 
+AR Path="/6119A625/61121920/610CF290" Ref="R?"  Part="1" 
+F 0 "R402" V 4375 3050 31  0000 L CNN
+F 1 "R" V 4450 3050 31  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4380 3125 31  0001 C CNN
+F 3 "~" H 4450 3125 31  0001 C CNN
+	1    4450 3125
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 610CF296
+P 4450 4200
+AR Path="/610CF296" Ref="R?"  Part="1" 
+AR Path="/610C9B8B/610CF296" Ref="R303"  Part="1" 
+AR Path="/610E2C9B/610CF296" Ref="R406"  Part="1" 
+AR Path="/611F19F3/61204F1B/610CF296" Ref="R406"  Part="1" 
+AR Path="/613B0D72/610CF296" Ref="R506"  Part="1" 
+AR Path="/611F19F3/61121920/610CF296" Ref="R406"  Part="1" 
+AR Path="/6119A625/61121920/610CF296" Ref="R?"  Part="1" 
+F 0 "R406" V 4375 4125 31  0000 L CNN
+F 1 "R" V 4450 4125 31  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4380 4200 31  0001 C CNN
+F 3 "~" H 4450 4200 31  0001 C CNN
+	1    4450 4200
+	0    1    1    0   
+$EndComp
+Connection ~ 5000 3525
+Wire Wire Line
+	5000 3525 5000 3550
+Wire Wire Line
+	5000 3525 5100 3525
+Wire Wire Line
+	5400 3525 5600 3525
+Wire Wire Line
+	5600 3750 4600 3750
+Wire Wire Line
+	4300 3125 4250 3125
+Wire Wire Line
+	4300 4200 4250 4200
+Wire Wire Line
+	4600 4200 4650 4200
+Wire Wire Line
+	5000 4450 5000 4550
+Wire Wire Line
+	4600 3125 4650 3125
+Wire Wire Line
+	5600 3525 5700 3525
+Connection ~ 5600 3525
+Wire Wire Line
+	4850 2625 5000 2625
+Text HLabel 4850 2625 0    39   Input ~ 0
+VM
+Text HLabel 5700 3525 2    39   Output ~ 0
+CONN_V
+Text HLabel 4100 3125 0    39   Input ~ 0
+HSV
+Text HLabel 4100 3750 0    39   Output ~ 0
+VSENSE
+Text HLabel 4100 4200 0    39   Input ~ 0
+LSV
+Wire Wire Line
+	5000 4550 4850 4550
+Text HLabel 4850 4550 0    39   Input ~ 0
+GND
+$Comp
+L Device:R R?
+U 1 1 611031EC
+P 4450 3750
+AR Path="/611031EC" Ref="R?"  Part="1" 
+AR Path="/610C9B8B/611031EC" Ref="R304"  Part="1" 
+AR Path="/610E2C9B/611031EC" Ref="R404"  Part="1" 
+AR Path="/611F19F3/61204F1B/611031EC" Ref="R404"  Part="1" 
+AR Path="/613B0D72/611031EC" Ref="R504"  Part="1" 
+AR Path="/611F19F3/61121920/611031EC" Ref="R404"  Part="1" 
+AR Path="/6119A625/61121920/611031EC" Ref="R?"  Part="1" 
+F 0 "R404" V 4375 3675 31  0000 L CNN
+F 1 "R" V 4450 3675 31  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4380 3750 31  0001 C CNN
+F 3 "~" H 4450 3750 31  0001 C CNN
+	1    4450 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4300 3750 4100 3750
+$Comp
+L Device:C C?
+U 1 1 61171654
+P 6350 3525
+AR Path="/61171654" Ref="C?"  Part="1" 
+AR Path="/610C9B8B/61171654" Ref="C301"  Part="1" 
+AR Path="/610E2C9B/61171654" Ref="C402"  Part="1" 
+AR Path="/611F19F3/61204F1B/61171654" Ref="C402"  Part="1" 
+AR Path="/613B0D72/61171654" Ref="C502"  Part="1" 
+AR Path="/611F19F3/61121920/61171654" Ref="C402"  Part="1" 
+AR Path="/6119A625/61121920/61171654" Ref="C?"  Part="1" 
+F 0 "C402" H 6600 3450 31  0000 R CNN
+F 1 "3u3" H 6600 3500 31  0000 R CNN
+F 2 "Capacitor_SMD:C_1812_4532Metric" H 6388 3375 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 6350 3525 31  0001 C CNN
+F 4 "KEMET" H 6350 3525 31  0001 C CNN "Manufacturer"
+F 5 "1812" H 6350 3525 31  0001 C CNN "Package"
+F 6 "C1812C335K1RACTU" H 6350 3525 31  0001 C CNN "Part Number"
+F 7 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 100volts 3.3uF 10% X7R" H 6350 3525 31  0001 C CNN "Description"
+F 8 "100V" H 6600 3550 31  0000 R CNN "DC Voltage"
+F 9 "X7R" H 6600 3600 31  0000 R CNN "Isolation Material"
+F 10 "10%" V 6350 3525 31  0001 C CNN "Tolerance"
+F 11 "Class 2" V 6350 3525 31  0001 C CNN "Class"
+	1    6350 3525
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5000 2625 6350 2625
+Connection ~ 5000 2625
+Wire Wire Line
+	6350 4550 5000 4550
+Connection ~ 5000 4550
+$Comp
+L Device:CP C?
+U 1 1 611BFC36
+P 6825 3525
+AR Path="/611BFC36" Ref="C?"  Part="1" 
+AR Path="/610C9B8B/611BFC36" Ref="C302"  Part="1" 
+AR Path="/610E2C9B/611BFC36" Ref="C403"  Part="1" 
+AR Path="/611F19F3/61204F1B/611BFC36" Ref="C403"  Part="1" 
+AR Path="/613B0D72/611BFC36" Ref="C503"  Part="1" 
+AR Path="/611F19F3/61121920/611BFC36" Ref="C403"  Part="1" 
+AR Path="/6119A625/61121920/611BFC36" Ref="C?"  Part="1" 
+F 0 "C403" H 6575 3600 31  0000 L CNN
+F 1 "750u" H 6575 3550 31  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_18x17.5" H 6863 3375 31  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/315/RDE0000C1255-1308107.pdf" H 6825 3525 31  0001 C CNN
+F 4 "Panasonic" H 6825 3525 31  0001 C CNN "Manufacturer"
+F 5 "NA" H 6825 3525 31  0001 C CNN "Package"
+F 6 "EEE-TP1J751V" H 6825 3525 31  0001 C CNN "Part Number"
+F 7 "Aluminum Electrolytic Capacitors - SMD 63VDC 750uF 20% SMD AEC-Q200 Vibe Proof " H 6825 3525 31  0001 C CNN "Description"
+F 8 "63V" H 6575 3500 31  0000 L CNN "DC Voltage"
+F 9 "95mR" H 6575 3450 31  0000 L CNN "ESR"
+F 10 "20%" V 6825 3525 31  0001 C CNN "Tolerance"
+F 11 "Electrolytic Capacitors " V 6825 3525 31  0001 C CNN "Class"
+	1    6825 3525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6825 4550 6350 4550
+Connection ~ 6350 4550
+Wire Wire Line
+	6825 2625 6350 2625
+Connection ~ 6350 2625
+Wire Wire Line
+	5000 3550 4100 3550
+Connection ~ 5000 3550
+Text HLabel 4100 3550 0    39   Output ~ 0
+V
+$Comp
+L Device:C C401
+U 1 1 61263E8D
+P 5600 3025
+AR Path="/610E2C9B/61263E8D" Ref="C401"  Part="1" 
+AR Path="/611F19F3/61204F1B/61263E8D" Ref="C401"  Part="1" 
+AR Path="/613B0D72/61263E8D" Ref="C501"  Part="1" 
+AR Path="/611F19F3/61121920/61263E8D" Ref="C401"  Part="1" 
+AR Path="/6119A625/61121920/61263E8D" Ref="C?"  Part="1" 
+F 0 "C401" H 5825 3000 31  0000 R CNN
+F 1 "C" H 5700 3100 31  0001 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5638 2875 31  0001 C CNN
+F 3 "~" H 5600 3025 31  0001 C CNN
+	1    5600 3025
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6126499D
+P 5250 2825
+AR Path="/6126499D" Ref="R?"  Part="1" 
+AR Path="/610C9B8B/6126499D" Ref="R?"  Part="1" 
+AR Path="/610E2C9B/6126499D" Ref="R401"  Part="1" 
+AR Path="/611F19F3/61204F1B/6126499D" Ref="R401"  Part="1" 
+AR Path="/613B0D72/6126499D" Ref="R501"  Part="1" 
+AR Path="/611F19F3/61121920/6126499D" Ref="R401"  Part="1" 
+AR Path="/6119A625/61121920/6126499D" Ref="R?"  Part="1" 
+F 0 "R401" V 5175 2750 31  0000 L CNN
+F 1 "R" V 5250 2750 31  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5180 2825 31  0001 C CNN
+F 3 "~" H 5250 2825 31  0001 C CNN
+	1    5250 2825
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 2825 5000 2825
+Wire Wire Line
+	5000 2825 5000 2925
+Wire Wire Line
+	5400 2825 5600 2825
+Wire Wire Line
+	5600 2825 5600 2875
+Wire Wire Line
+	5600 3175 5600 3375
+Wire Wire Line
+	5600 3375 5000 3375
+Wire Wire Line
+	5000 3375 5000 3325
+$Comp
+L Device:C C404
+U 1 1 6127C97C
+P 5600 4100
+AR Path="/610E2C9B/6127C97C" Ref="C404"  Part="1" 
+AR Path="/611F19F3/61204F1B/6127C97C" Ref="C404"  Part="1" 
+AR Path="/613B0D72/6127C97C" Ref="C504"  Part="1" 
+AR Path="/611F19F3/61121920/6127C97C" Ref="C404"  Part="1" 
+AR Path="/6119A625/61121920/6127C97C" Ref="C?"  Part="1" 
+F 0 "C404" H 5825 4075 31  0000 R CNN
+F 1 "C" H 5700 4200 31  0001 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5638 3950 31  0001 C CNN
+F 3 "~" H 5600 4100 31  0001 C CNN
+	1    5600 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6127C982
+P 5250 3900
+AR Path="/6127C982" Ref="R?"  Part="1" 
+AR Path="/610C9B8B/6127C982" Ref="R?"  Part="1" 
+AR Path="/610E2C9B/6127C982" Ref="R405"  Part="1" 
+AR Path="/611F19F3/61204F1B/6127C982" Ref="R405"  Part="1" 
+AR Path="/613B0D72/6127C982" Ref="R505"  Part="1" 
+AR Path="/611F19F3/61121920/6127C982" Ref="R405"  Part="1" 
+AR Path="/6119A625/61121920/6127C982" Ref="R?"  Part="1" 
+F 0 "R405" V 5175 3825 31  0000 L CNN
+F 1 "R" V 5250 3825 31  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5180 3900 31  0001 C CNN
+F 3 "~" H 5250 3900 31  0001 C CNN
+	1    5250 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 3900 5600 3900
+Wire Wire Line
+	5600 3900 5600 3950
+Wire Wire Line
+	5100 3900 5000 3900
+Wire Wire Line
+	5000 3900 5000 4000
+Wire Wire Line
+	5000 4400 5000 4450
+Wire Wire Line
+	5000 4450 5600 4450
+Wire Wire Line
+	5600 4450 5600 4250
+Wire Wire Line
+	5600 3525 5600 3750
+Wire Wire Line
+	5000 3550 5000 3900
+Connection ~ 5000 3900
+Connection ~ 5000 4450
+Wire Wire Line
+	5000 3375 5000 3525
+Connection ~ 5000 3375
+Wire Wire Line
+	5000 2625 5000 2825
+Connection ~ 5000 2825
+Wire Wire Line
+	6350 2625 6350 3375
+Wire Wire Line
+	6825 2625 6825 3375
+Wire Wire Line
+	6350 3675 6350 4550
+Wire Wire Line
+	6825 3675 6825 4550
+$Comp
+L Device:D_Schottky D?
+U 1 1 610E680B
+P 4450 2950
+AR Path="/610D6EC3/610E680B" Ref="D?"  Part="1" 
+AR Path="/610E2C9B/610E680B" Ref="D401"  Part="1" 
+AR Path="/611F19F3/61204F1B/610E680B" Ref="D401"  Part="1" 
+AR Path="/613B0D72/610E680B" Ref="D501"  Part="1" 
+AR Path="/611F19F3/61121920/610E680B" Ref="D401"  Part="1" 
+AR Path="/6119A625/61121920/610E680B" Ref="D?"  Part="1" 
+F 0 "D401" H 4450 3025 31  0000 C CNN
+F 1 "D_Schottky" H 4450 3100 31  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 4450 2950 31  0001 C CNN
+F 3 "~" H 4450 2950 31  0001 C CNN
+	1    4450 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2950 4650 2950
+Wire Wire Line
+	4650 2950 4650 3125
+Connection ~ 4650 3125
+Wire Wire Line
+	4650 3125 4700 3125
+Wire Wire Line
+	4300 2950 4250 2950
+Wire Wire Line
+	4250 2950 4250 3125
+Connection ~ 4250 3125
+Wire Wire Line
+	4250 3125 4100 3125
+$Comp
+L Device:D_Schottky D?
+U 1 1 610E93D2
+P 4450 4375
+AR Path="/610D6EC3/610E93D2" Ref="D?"  Part="1" 
+AR Path="/610E2C9B/610E93D2" Ref="D402"  Part="1" 
+AR Path="/611F19F3/61204F1B/610E93D2" Ref="D402"  Part="1" 
+AR Path="/613B0D72/610E93D2" Ref="D502"  Part="1" 
+AR Path="/611F19F3/61121920/610E93D2" Ref="D402"  Part="1" 
+AR Path="/6119A625/61121920/610E93D2" Ref="D?"  Part="1" 
+F 0 "D402" H 4375 4450 31  0000 L CNN
+F 1 "D_Schottky" H 4450 4525 31  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 4450 4375 31  0001 C CNN
+F 3 "~" H 4450 4375 31  0001 C CNN
+	1    4450 4375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4375 4650 4375
+Wire Wire Line
+	4650 4375 4650 4200
+Connection ~ 4650 4200
+Wire Wire Line
+	4650 4200 4700 4200
+Wire Wire Line
+	4300 4375 4250 4375
+Wire Wire Line
+	4250 4375 4250 4200
+Connection ~ 4250 4200
+Wire Wire Line
+	4250 4200 4100 4200
+$Comp
+L Device:R R?
+U 1 1 611228BC
+P 5250 3525
+AR Path="/611228BC" Ref="R?"  Part="1" 
+AR Path="/610C9B8B/611228BC" Ref="R?"  Part="1" 
+AR Path="/610D6EC3/611228BC" Ref="R?"  Part="1" 
+AR Path="/610E2C9B/611228BC" Ref="R403"  Part="1" 
+AR Path="/611F19F3/61204F1B/611228BC" Ref="R403"  Part="1" 
+AR Path="/613B0D72/611228BC" Ref="R503"  Part="1" 
+AR Path="/611F19F3/61121920/611228BC" Ref="R403"  Part="1" 
+AR Path="/6119A625/61121920/611228BC" Ref="R?"  Part="1" 
+F 0 "R403" V 5175 3450 31  0000 L CNN
+F 1 "R" V 5250 3450 31  0001 C CNN
+F 2 "Resistor_SMD:R_1210_3225Metric" V 5180 3525 31  0001 C CNN
+F 3 "~" H 5250 3525 31  0001 C CNN
+	1    5250 3525
+	0    1    1    0   
+$EndComp
+Text Notes 5500 900  0    157  ~ 31
+PHASE V
+Wire Notes Line width 16 style solid rgb(0, 72, 0)
+	500  1000 11200 1000
+$EndSCHEMATC
