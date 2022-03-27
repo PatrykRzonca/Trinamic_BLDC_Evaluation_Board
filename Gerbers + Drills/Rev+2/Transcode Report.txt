@@ -1,7 +1,0 @@
-
-
-   ---- Transcoding 'Z:\home\patrys\git_KiCad_Hardware\Eval_Board\Job_Files\Rev+2\eval_board_tmc6200-ta-F_Cu.gtl' ----   Sat Sep 18 22:37:16 2021
-
-D30   --> D100
-D31   --> D101
------------------------------------------------------------------
