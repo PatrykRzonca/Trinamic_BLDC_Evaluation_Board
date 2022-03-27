@@ -1,5 +1,0 @@
-12-01 18:00:41 replicate_layout.action_replicate_layout 305:Plugin executed on: 'linux'
-12-01 18:00:41 replicate_layout.action_replicate_layout 306:Plugin executed with python version: '3.8.5 (default, Jul 28 2020, 12:59:40) \n[GCC 9.3.0]'
-12-01 18:00:41 replicate_layout.action_replicate_layout 307:KiCad build version: 5.1.10-88a1d61d58~90~ubuntu20.04.1
-12-01 18:00:41 replicate_layout.action_replicate_layout 308:Replicate layout plugin version: 68 started
-12-01 18:00:41 replicate_layout.action_replicate_layout 319:wx top level windows: WindowList: [<wx._core.Frame object at 0x7fc075b6c4c0>, <wx._core.Frame object at 0x7fc075b6c550>, <wx._core.Frame object at 0x7fc075b6c5e0>, <wx._core.Frame object at 0x7fc075b6c670>, <wx._core.Frame object at 0x7fc075b6c700>, <wx._core.Frame object at 0x7fc075b6c790>, <wx._core.Frame object at 0x7fc075b6c820>, <delete_selected.action_delete_selected.DeleteLayoutDialog object at 0x7fc058c769d0>]

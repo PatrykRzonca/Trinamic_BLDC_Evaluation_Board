@@ -7,8 +7,12 @@
   (title_block
     (title "TMC6200-TA-T Eval Board")
     (date "2021-09-03")
-    (rev "ED A0")
-    (company "Quasi Peak")
+    (rev "${REVISION}")
+    (company "${COMPANY}")
+    (comment 1 "${ENGINEER}")
+    (comment 2 "${PHONE_NUMBER}")
+    (comment 3 "${EMAIL}")
+    (comment 4 "${SENTENCE}")
   )
 
   (lib_symbols
@@ -1120,7 +1124,7 @@
     (pin "1" (uuid b65c9458-cddb-41f9-ab81-184ab14e4b7f))
   )
 
-  (symbol (lib_id "Device:R") (at 168.91 111.76 0) (mirror x)
+  (symbol (lib_id "Device:R") (at 168.91 111.76 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000612aa74b)
     (property "Reference" "R603" (id 0) (at 163.195 109.855 0)
@@ -1163,7 +1167,7 @@
     (pin "2" (uuid 08260803-a52f-4779-aba4-7590352cf969))
   )
 
-  (symbol (lib_id "Device:R") (at 152.4 84.455 0) (mirror x)
+  (symbol (lib_id "Device:R") (at 152.4 84.455 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000612ac0a4)
     (property "Reference" "R601" (id 0) (at 146.685 82.55 0)
@@ -1206,7 +1210,7 @@
     (pin "2" (uuid 07998e74-6597-40ad-8acf-0e1be32cb99c))
   )
 
-  (symbol (lib_id "Device:R") (at 152.4 93.345 0) (mirror x)
+  (symbol (lib_id "Device:R") (at 152.4 93.345 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000612acfcf)
     (property "Reference" "R602" (id 0) (at 146.685 91.44 0)
@@ -1249,7 +1253,7 @@
     (pin "2" (uuid c0ad9477-b2f6-4a63-9ae8-3a7246f0932f))
   )
 
-  (symbol (lib_id "Device:LED") (at 38.1 161.925 90)
+  (symbol (lib_id "Device:LED") (at 38.1 161.925 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000612c6b66)
     (property "Reference" "D602" (id 0) (at 32.385 160.655 90)
@@ -1289,7 +1293,7 @@
     (pin "2" (uuid eec49c7b-92e8-4172-a074-960deb52ea38))
   )
 
-  (symbol (lib_id "Device:LED") (at 50.8 161.925 90)
+  (symbol (lib_id "Device:LED") (at 50.8 161.925 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000612c78ff)
     (property "Reference" "D603" (id 0) (at 45.085 160.655 90)
@@ -1329,7 +1333,7 @@
     (pin "2" (uuid 6c53c9b3-83ab-412a-be9c-4ec640512019))
   )
 
-  (symbol (lib_id "Device:R") (at 38.1 153.035 0) (mirror x)
+  (symbol (lib_id "Device:R") (at 38.1 153.035 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000612cab83)
     (property "Reference" "R605" (id 0) (at 32.385 151.13 0)
@@ -1372,7 +1376,7 @@
     (pin "2" (uuid ac4be16c-21fc-4902-a5ac-78f41e297ebb))
   )
 
-  (symbol (lib_id "Device:R") (at 25.4 153.035 0) (mirror x)
+  (symbol (lib_id "Device:R") (at 25.4 153.035 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000612cb920)
     (property "Reference" "R604" (id 0) (at 19.685 151.13 0)
@@ -1415,7 +1419,7 @@
     (pin "2" (uuid d5218d6d-22d3-4adf-bc59-612d5a4ca233))
   )
 
-  (symbol (lib_id "Device:R") (at 50.8 153.035 0) (mirror x)
+  (symbol (lib_id "Device:R") (at 50.8 153.035 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000612ce2ad)
     (property "Reference" "R606" (id 0) (at 45.085 151.13 0)
@@ -1476,7 +1480,7 @@
     (pin "1" (uuid e011b194-cc78-4a70-854c-19eb3d822fd7))
   )
 
-  (symbol (lib_id "eval_board_tmc6200-ta-rescue:MAX15062BATA+T-eval_board_tmc6200-ta") (at 167.005 77.47 0)
+  (symbol (lib_id "eval_board_tmc6200-ta-rescue:MAX15062BATA+T-eval_board_tmc6200-ta") (at 167.005 77.47 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061368157)
     (property "Reference" "U601" (id 0) (at 167.005 76.2 0)
@@ -1519,7 +1523,7 @@
     (pin "1" (uuid 2a8a117a-ef0e-417f-bf3e-31e771dce7dc))
   )
 
-  (symbol (lib_id "Device:C") (at 142.875 89.535 0)
+  (symbol (lib_id "Device:C") (at 142.875 89.535 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006136ead1)
     (property "Reference" "C603" (id 0) (at 137.16 87.63 0)
@@ -1597,7 +1601,7 @@
     (pin "2" (uuid c7a44850-6bd4-4ff6-9fa1-cf557584957c))
   )
 
-  (symbol (lib_id "Device:C") (at 120.65 89.535 0)
+  (symbol (lib_id "Device:C") (at 120.65 89.535 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061371b96)
     (property "Reference" "C602" (id 0) (at 114.935 87.63 0)
@@ -1676,7 +1680,7 @@
     (pin "1" (uuid 20bbf6e3-9d08-4dde-9d58-01a55c7bfd2b))
   )
 
-  (symbol (lib_id "Device:C") (at 204.47 98.425 0)
+  (symbol (lib_id "Device:C") (at 204.47 98.425 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061378748)
     (property "Reference" "C604" (id 0) (at 198.755 96.52 0)
@@ -1773,7 +1777,7 @@
     (pin "1" (uuid edc31373-e494-422f-9688-7a79b604f9f2))
   )
 
-  (symbol (lib_id "Device:C") (at 221.615 88.9 0)
+  (symbol (lib_id "Device:C") (at 221.615 88.9 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061386f93)
     (property "Reference" "C601" (id 0) (at 215.9 86.995 0)
@@ -1892,7 +1896,7 @@
     (pin "1" (uuid 2aa70724-b165-42a8-9252-75752313f01f))
   )
 
-  (symbol (lib_id "power:+36V") (at 120.65 78.74 0)
+  (symbol (lib_id "power:+36V") (at 120.65 78.74 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000613b3293)
     (property "Reference" "#PWR0603" (id 0) (at 120.65 82.55 0)
@@ -1910,7 +1914,7 @@
     (pin "1" (uuid bc7b6129-2bf4-460a-967d-d9f7e933d21b))
   )
 
-  (symbol (lib_id "power:+3.3V") (at 221.615 78.74 0)
+  (symbol (lib_id "power:+3.3V") (at 221.615 78.74 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000613bac1a)
     (property "Reference" "#PWR0604" (id 0) (at 221.615 82.55 0)
@@ -1928,7 +1932,7 @@
     (pin "1" (uuid 40ee4fb7-0ca3-40d7-a227-576fe69f8e35))
   )
 
-  (symbol (lib_id "power:GND") (at 25.4 167.005 0)
+  (symbol (lib_id "power:GND") (at 25.4 167.005 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061421e11)
     (property "Reference" "#PWR0617" (id 0) (at 25.4 173.355 0)
@@ -1946,7 +1950,7 @@
     (pin "1" (uuid cff86565-569c-40d0-a248-40e8661197c9))
   )
 
-  (symbol (lib_id "Device:LED") (at 25.4 161.925 90)
+  (symbol (lib_id "Device:LED") (at 25.4 161.925 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061421e1f)
     (property "Reference" "D601" (id 0) (at 19.685 160.655 90)
@@ -1986,7 +1990,7 @@
     (pin "2" (uuid bcb4f640-4aa6-4780-b3bd-36df8c0e33e1))
   )
 
-  (symbol (lib_id "power:GND") (at 38.1 167.005 0)
+  (symbol (lib_id "power:GND") (at 38.1 167.005 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000614239f1)
     (property "Reference" "#PWR0618" (id 0) (at 38.1 173.355 0)
@@ -2022,7 +2026,7 @@
     (pin "1" (uuid f22312fd-5d77-4a50-81d6-70a10f226c05))
   )
 
-  (symbol (lib_id "power:+3.3V") (at 38.1 147.955 0)
+  (symbol (lib_id "power:+3.3V") (at 38.1 147.955 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006142805e)
     (property "Reference" "#PWR0615" (id 0) (at 38.1 151.765 0)
@@ -2079,7 +2083,7 @@
     (pin "1" (uuid 5d320aa0-e039-487b-b0d8-2da83a52d475))
   )
 
-  (symbol (lib_id "power:+36V") (at 41.91 58.42 0)
+  (symbol (lib_id "power:+36V") (at 41.91 58.42 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061693c00)
     (property "Reference" "#PWR0601" (id 0) (at 41.91 62.23 0)
@@ -2097,7 +2101,7 @@
     (pin "1" (uuid 53ba76ab-65c1-4548-b1c7-920dd6a2073a))
   )
 
-  (symbol (lib_id "power:GND") (at 50.8 167.005 0)
+  (symbol (lib_id "power:GND") (at 50.8 167.005 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006197b1b8)
     (property "Reference" "#PWR0619" (id 0) (at 50.8 173.355 0)
@@ -2115,7 +2119,7 @@
     (pin "1" (uuid 007d4984-554b-4ae4-b43f-93252a6ff91c))
   )
 
-  (symbol (lib_id "power:+36V") (at 50.8 147.955 0)
+  (symbol (lib_id "power:+36V") (at 50.8 147.955 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006197b1bf)
     (property "Reference" "#PWR0616" (id 0) (at 50.8 151.765 0)

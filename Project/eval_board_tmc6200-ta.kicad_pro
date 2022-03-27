@@ -397,10 +397,10 @@
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "ANALOG_SENSE",
+        "name": "Analog_Signal",
         "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgb(91, 205, 255)",
         "track_width": 0.2,
         "via_diameter": 0.45,
         "via_drill": 0.2,
@@ -415,10 +415,10 @@
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "I2C_INT",
+        "name": "I2C_Interrupt",
         "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgb(255, 16, 82)",
         "track_width": 0.2,
         "via_diameter": 0.45,
         "via_drill": 0.2,
@@ -433,10 +433,10 @@
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "MOSFET_GATE_OFF",
+        "name": "MOSFETS_GATE",
         "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgb(65, 255, 44)",
         "track_width": 0.2,
         "via_diameter": 0.45,
         "via_drill": 0.2,
@@ -466,7 +466,43 @@
     "drawing": {
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
-      "field_names": [],
+      "field_names": [
+        {
+          "name": "Manufacturer",
+          "url": false,
+          "visible": false
+        },
+        {
+          "name": "Part Number",
+          "url": false,
+          "visible": false
+        },
+        {
+          "name": "DNP",
+          "url": false,
+          "visible": false
+        },
+        {
+          "name": "Description",
+          "url": false,
+          "visible": false
+        },
+        {
+          "name": "Product",
+          "url": false,
+          "visible": false
+        },
+        {
+          "name": "Package",
+          "url": false,
+          "visible": false
+        },
+        {
+          "name": "Subcategory",
+          "url": false,
+          "visible": false
+        }
+      ],
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
@@ -521,17 +557,24 @@
       "BLDC_MOTOR.sch"
     ],
     [
-      "00000000-0000-0000-0000-000061121776",
+      "dc123010-290d-4a25-a0d8-ba5c5f6b16f0",
       "U_MOSFET_BRIDGE.sch"
     ],
     [
-      "00000000-0000-0000-0000-000061121920",
+      "47dfa988-a6f2-4fb2-bcc4-087e7d870d6b",
       "V_MOSFET_BRIDGE.sch"
     ],
     [
-      "00000000-0000-0000-0000-000061121929",
+      "fd1b9f37-48a7-4de3-b64e-c6f0ef4aae54",
       "W_MOSFET_BRIDGE.sch"
     ]
   ],
-  "text_variables": {}
+  "text_variables": {
+    "COMPANY": "QUASI PEAK",
+    "EMAIL": "patryk58111@gmail.com",
+    "ENGINEER": "Patryk Rzońca",
+    "PHONE_NUMBER": "+48 731 375 090",
+    "REVISION": "ED A0",
+    "SENTENCE": "Zaprojektowane z  pasji, zaprojektowane w Polsce"
+  }
 }
