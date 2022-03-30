@@ -542,19 +542,19 @@
     ],
     [
       "00000000-0000-0000-0000-000061367eff",
-      "BUCK_Converter.sch"
+      "BUCK_Converter"
     ],
     [
       "00000000-0000-0000-0000-00006119b01a",
-      "Microcontroller.sch"
+      "Microcontroller"
     ],
     [
       "00000000-0000-0000-0000-0000612a6248",
-      "IO Expander.sch"
+      "IO Expander"
     ],
     [
       "00000000-0000-0000-0000-0000611f19f3",
-      "BLDC_MOTOR.sch"
+      "BLDC_MOTOR"
     ],
     [
       "dc123010-290d-4a25-a0d8-ba5c5f6b16f0",
